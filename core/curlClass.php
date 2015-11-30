@@ -23,7 +23,7 @@ class curlClass
       $this->address = $address;
     }
     
-    public function setFullUrl ()
+    private function setFullUrl()
     {
       return $fullUrl = $this->geoURL . $this->address;
     }
@@ -50,9 +50,9 @@ class curlClass
         CURLOPT_PROXY          =>"192.168.20.22:3128",
     ); 
 
-    $this->ch      = curl_init($this->url); 
+    $ch      = curl_init($this->setFullUrl()); 
     curl_setopt_array($this->ch, $this->options); 
-    $this->content = curl_exec($this->ch); 
+    $content = curl_exec($this->ch); 
     /*$err     = curl_errno($ch); 
     $errmsg  = curl_error($ch) ; 
     $header  = curl_getinfo($ch); */
