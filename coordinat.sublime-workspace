@@ -1,0 +1,541 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"password	(configClass.php)"
+			],
+			[
+				"user",
+				"username	(configClass.php)"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"get",
+				"getDbConfig	(configClass.php)"
+			],
+			[
+				"confi",
+				"configClass	(configClass.php)"
+			],
+			[
+				"орг",
+				"оргтехникой"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"po",
+				"pos:r	position:relative"
+			],
+			[
+				"d",
+				"d:b	display:block"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"ta",
+				"ta:c	text-align:center"
+			],
+			[
+				"q",
+				"query2API"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"a",
+				"alt	Attr"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"m",
+				"m	margin"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"nth",
+				"nth-child"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"opa",
+				"opacity	opacity()"
+			],
+			[
+				"remove",
+				"removeClass〔function〕"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"f",
+				"fun	Function"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"lstp",
+				"list-style-type"
+			],
+			[
+				"tog",
+				"toggleMenu"
+			],
+			[
+				"rg",
+				"rgba	rgba()"
+			],
+			[
+				"bgc",
+				"bgc	background-color"
+			],
+			[
+				"b",
+				"button	Tag"
+			],
+			[
+				"le",
+				"left"
+			],
+			[
+				"im",
+				"import	@import"
+			],
+			[
+				"lo",
+				"loader"
+			],
+			[
+				"sa",
+				"sans-serif  (value)"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 111.0,
+		"last_filter": "Package Control: insta",
+		"selected_items":
+		[
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 514.0
+	},
+	"console":
+	{
+		"height": 60.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"git pull master HEAD",
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib2,os;pf='Package Control.sublime-package';ipp=sublime.installed_packages_path();os.makedirs(ipp) if not os.path.exists(ipp) else None;open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read())",
+			"import urllib2,os; pf='Package Control.sublime-package'; ipp=sublime.installed_packages_path(); os.makedirs(ipp) if not os.path.exists(ipp) else None; urllib2.install_opener(urllib2.build_opener(urllib2.ProxyHandler())); open(os.path.join(ipp,pf),'wb').write(urllib2.urlopen('http://sublime.wbond.net/'+pf.replace(' ','%20')).read()); print('Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/projects/Coordinat",
+		"/D/projects/Coordinat/core"
+	],
+	"file_history":
+	[
+		"/S/INVENT/keys.txt",
+		"/C/Users/Ilyash/Desktop/CMD.txt",
+		"/C/Users/Ilyash/Desktop/evening.txt",
+		"/D/projects/Coordinat/index.php",
+		"/D/projects/Coordinat/core/configClass.php",
+		"/D/projects/Coordinat/core/dbClass.php",
+		"/C/Users/Ilyash/Desktop/!!!EATON.txt",
+		"/D/projects/yii2adv/common/config/main-local.php",
+		"/D/projects/findit.github.io/css/sass/vars.sass",
+		"/D/projects/findit.github.io/css/sass/main.sass",
+		"/D/projects/findit.github.io/css/sass/fonts.sass",
+		"/D/projects/findit.github.io/index.html",
+		"/C/Users/Ilyash/Desktop/Разное.txt",
+		"/D/Repositories/BatFiles/Bash/delOldDir.sh",
+		"/D/projects/framework/db/mysql/QueryBuilder.php",
+		"/D/Repositories/BatFiles/dateCheck.bat",
+		"/D/Programms/Безымянная папка/Новый текстовый документ.txt",
+		"/C/Users/Ilyash/Desktop/Preferences.sublime-settings",
+		"/C/Users/Ilyash/AppData/Roaming/1C/1CEStart/1CEStart.cfg",
+		"/C/Users/Ilyash/Desktop/winxp_defence.txt",
+		"/D/keys/srv01-git1.siv/id_rsa.pub",
+		"/C/Users/Ilyash/.ssh/id_rsa.pub",
+		"/D/w32tm.txt",
+		"/D/projects/findit.github.io/js/common.js",
+		"/S/WAREHOUSE/1c77/1Cv77/ReadMe.txt",
+		"/C/Users/Ilyash/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/T/Install/radmin/radmin34/FW_ tr014631-10_cl 020369 Приход электронно.TXT",
+		"/D/Repositories/BatFiles/ntp1.reg",
+		"/D/projects/wordpress-landing-page-lesson-master/wordpress-landing-page-lesson-master/_clean_html/js/common.js",
+		"/C/Users/Ilyash/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/D/Repositories/srv01-prnt1/README.md",
+		"/D/Repositories/BatFiles/README.md",
+		"/C/Program Files/Git/etc/ssh/ssh_config",
+		"/D/Documents/112313",
+		"/D/Documents/lamp",
+		"/D/Repositories/BatFiles/key.vbs",
+		"/C/Users/Ilyash/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/S/INVENT/i.txt",
+		"/C/Users/Ilyash/Desktop/gitlab.txt",
+		"/S/INVENT/GARANT-PC.txt",
+		"/S/INVENT/WS01-OAIT1.txt",
+		"/D/WS01-OAIT1.txt",
+		"/D/treeS.txt",
+		"/D/.txt",
+		"/D/1234.txt",
+		"/T/Install/OC/produkey/readme.txt",
+		"//ws01-oo8/d$/old/Users/566803851/History/10998842.txt",
+		"/C/Users/Ilyash/Desktop/curl.txt",
+		"/D/Documents/Мысли все как листья осенью",
+		"/S/HOME/INKASS/Иван Грозный/Текстовый документ.txt",
+		"/C/Users/Ilyash/Desktop/!ALI.txt",
+		"/T/HOME2/INFORM2/01/Текстовый документ.txt",
+		"/S/HOME/EXCHANGE/Test_File.txt",
+		"/C/Users/Ilyash/Desktop/Rjyc+.txt",
+		"/D/iBank2_new/Upd20x-2.0.23.1422/readme.txt",
+		"/S/HOME/EXCHANGE/Новый текстовый документ.txt",
+		"/C/Users/Ilyash/Desktop/IP_domru.txt",
+		"/C/Users/Ilyash/Desktop/ciphers.txt",
+		"/C/Users/Ilyash/Desktop/Новый текстовый документ (2).txt",
+		"/D/projects/wordpress-landing-page-lesson-master/wordpress-landing-page-lesson-master/_clean_html/index.html",
+		"/D/HoverEffectIdeas/HoverEffectIdeas/css/set1.css",
+		"/D/HoverEffectIdeas/HoverEffectIdeas/index.html",
+		"/T/Install/SysinternalsSuite/readme.txt",
+		"/C/Users/Ilyash/AppData/Local/Temp/fz3temp-1/config.php",
+		"/D/Auslogics BoostSpeed 5.0.6.250/RePack/прочитать.txt",
+		"//192.168.20.194/Lil/Новый текстовый документ.txt",
+		"/D/projects/findIT/index.html",
+		"/C/Users/Ilyash/Desktop/out.txt",
+		"/C/Users/Ilyash/Desktop/Новый текстовый документ.txt",
+		"/C/Users/Ilyash/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/Ilyash/AppData/Local/Temp/fz3temp-1/style.css",
+		"/D/projects/lamp.json",
+		"/D/projects/wordpress-landing-page-lesson-master/wordpress-landing-page-lesson-master/_clean_html/css/sass/main.sass",
+		"/D/rar-crac/RAR-CRAC.TXT",
+		"/C/Users/Ilyash/Desktop/s.txt",
+		"/S/WAREHOUSE/DOCTAB/123/таб.txt",
+		"/S/HOME/INFORM/Check_zapros.txt",
+		"/S/HOME/INFORM/gpg/Текстовый документ.txt",
+		"/S/DUTYDOCS/Обновление системы Контур-Экстерн_20080814.TXT",
+		"/C/Users/Ilyash/Desktop/embedded-db/wildfire.properties",
+		"/C/Users/Ilyash/Desktop/embedded-db/wildfire.script",
+		"/D/Programms/FirefoxPortable/Data/plugins/plugins_readme.txt",
+		"/D/projects/materialize/css/materialize.css",
+		"/D/projects/findIT/css/sass/main.sass",
+		"/C/Users/Ilyash/Desktop/converter.properties",
+		"/C/Users/Ilyash/Desktop/setEnvironment.bat",
+		"/C/Users/Ilyash/Desktop/1с/1c_to_kl.txt",
+		"/D/projects/findit.github.io/css/fonts.css",
+		"/D/projects/findit.github.io/takeCoordinat.php",
+		"/C/Users/Ilyash/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/VLCP8LKF/out.txt",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/changes.txt",
+		"/C/Users/Ilyash/Desktop/etc/state_codes.xml",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/state_codes.xml",
+		"/C/Users/Ilyash/Desktop/etc/sender.properties",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/sender.properties",
+		"/C/Users/Ilyash/Desktop/etc/rates.properties",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/rates.properties",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/print.xml",
+		"/C/Users/Ilyash/Desktop/etc/print.xml",
+		"/C/Users/Ilyash/Desktop/etc/payment-type.xml",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/payment-type.xml",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/myroute.bsh",
+		"/C/Users/Ilyash/Desktop/etc/myroute.bsh",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/holidays.properties",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/gate-signs.xml",
+		"/C/Users/Ilyash/Desktop/etc/gate-signs.xml",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/converter.properties",
+		"/C/Users/Ilyash/Desktop/etc/converter.properties",
+		"/C/Users/Ilyash/Desktop/PB-Gefest-2.0.23.1157.1498/etc/banks.xml",
+		"/C/Users/Ilyash/Desktop/etc/banks.xml",
+		"/C/Users/Ilyash/Desktop/IPSelector/IPSelector.exe.config",
+		"/C/Users/Ilyash/Desktop/1с/21Сибэс.txt",
+		"/S/HOME/EXCHANGE/rdp.txt",
+		"/D/Ойбанк с нуля. С блэк-джэком/Новый текстовый документ.txt",
+		"/D/projects/findit.github.io/css/media.css",
+		"/S/WAREHOUSE/DOCTAB/Реестры ошибок/Реестр ошибок/Новая папка/Текстовый документ.txt",
+		"/D/Programms/iBank2-2.0.23.1193/modules/server/RUNNING.txt",
+		"/D/oraclient10/TNSNAMES.ORA",
+		"/C/Users/Ilyash/Desktop/Dogovor-ITO-KO.txt",
+		"/C/Users/Ilyash/Desktop/ms_email.csv",
+		"/C/Users/Ilyash/Desktop/ms_email.txt",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/Users/Ilyash/Desktop/emails_go.csv",
+		"/C/Users/Ilyash/Desktop/1.csv",
+		"/C/Users/Ilyash/Desktop/Upd20x-2.0.23.1159/readme.txt",
+		"/C/Users/Ilyash/Desktop/em.txt",
+		"/C/Users/Ilyash/Desktop/moscow.txt",
+		"/C/Users/Ilyash/Desktop/112313"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"kassa",
+			"ws01-monster",
+			"CM9QX",
+			"div",
+			"настройка",
+			"»",
+			"«",
+			"watch",
+			"abImg1",
+			"blockquote",
+			"none",
+			";",
+			"}",
+			"{",
+			"topMen",
+			"sPortfolio",
+			"sPort",
+			"tar",
+			"white",
+			"section",
+			"SSL1",
+			"4023",
+			"cryptopro",
+			"4023",
+			"                                \n",
+			"tomato",
+			"#Recommended minimum configuration:",
+			"visible_hostname",
+			"cache_repla",
+			"memory_pools_limit",
+			"store"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 126.0
+	},
+	"output.sftp":
+	{
+		"height": 126.0
+	},
+	"pinned_build_system": "",
+	"project": "coordinat.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
