@@ -1,0 +1,447 @@
+@import "bourbon/bourbon"
+@import vars
+
+@mixin kerning($kerning)
+  letter-spacing: $kerning + px
+
+@mixin transition ($properties...)
+  transition: $properties .3s ease-out
+  -webkit-transition: $properties .3s ease-out
+  -moz-transition: $properties .3s ease-out
+  -ms-transition: $properties .3s ease-out
+  -o-transition: $properties .3s ease-out
+
+@mixin centerer($horizontal: true, $vertical: true)
+  position: absolute
+  @if ($horizontal and $vertical)
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  @else if ($horizontal)
+    left: 50%
+    transform: translate(-50%, 0)
+  @else if ($vertical)
+    top: 50%
+    transform: translate(0, -50)
+
+*, body, html, section
+  margin: 0
+  padding: 0
+
+html
+  background: $htmlColor
+  color: $fontColor
+
+.mainHead
+  display: block
+  background: rgba(0,0,0, 0.7)
+
+.hidden
+  display: none
+
+.loader
+  background: none repeat scroll 0 0 $loaderBG
+  bottom: 0
+  height: 100%
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  z-index: 9999
+  .loader-inner
+    background-color: $loaderBG
+    height: 60px
+    width: 60px
+    margin-top: -30px
+    margin-left: -30px
+    left: 50%
+    top: 50%
+    position: absolute
+
+button, button:focus, .sandwich, .sandwich.active
+  background: none
+
+.toggle_mnu
+  width: 60px
+  height: 60px
+  position: fixed
+  z-index: 100
+  border: none
+  left: 60px
+  top: 20px
+  span
+    display: block
+
+.sandwich
+  width: $w
+  height: $w
+  position: absolute
+  top: 8px
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  z-index: 200
+
+.sw-topper
+  position: relative
+  top: 0
+  width: $w
+  height: $h
+  background: rgb(255, 255, 255)
+  border: none
+  border-radius: 4px 4px 4px 4px
+  transition: transform 0.5s, top 0.2s
+  display: block
+
+.sw-bottom
+  position: relative
+  width: $w
+  height: $h
+  top: $h * 2
+  background: rgb(255, 255, 255)
+  border: none
+  border-radius: 4px 4px 4px 4px
+  transition: transform 0.5s, top 0.2s
+  transition-delay: 0.2s, 0s
+
+.sw-footer
+  position: relative
+  width: $w
+  height: $h
+  top: $h * 4
+  background: rgb(255, 255, 255)
+  border: none
+  border-radius: 4px 4px 4px 4px
+  transition: all 0.5s
+  transition-delay: 0.1s
+
+.sandwich.active
+  .sw-topper
+    top: 9px
+    transform: rotate(-45deg)
+  .sw-bottom
+    top: 5px
+    transform: rotate(45deg)
+  .sw-footer
+    opacity: 0
+    top: 0
+    transform: rotate(180deg)
+
+.top_mnu
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(0,0,0,.95)
+  z-index: 50
+  right: 0
+  top: 0
+  display: none
+  ul,
+  li
+    list-style-type: none
+    padding: 0
+    margin: 0
+    border: none
+
+  ul
+    margin-top: 200px
+    text-align: center
+    +animation-duration(.06s)
+    padding: 0
+    li
+      width: 100%
+      &:nth-child(1) a
+        +animation-delay(0)
+      &:nth-child(2) a
+        +animation-delay(.1s)
+      &:nth-child(3) a
+        +animation-delay(.2s)
+      &:nth-child(4) a
+        +animation-delay(.3s)
+    a
+      color: $mainTextp
+      display: inline-block
+      text-transform: uppercase
+      font-size: 22px
+      opacity: 0
+      position: relative
+      overflow: hidden
+      padding: 0.5em 0
+      height: 60px
+      outline: none
+      &:active
+        color: $mainLogoColor
+      &::after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 3px
+        background: $mainTextp
+        content: ''
+        -webkit-transition: -webkit-transform 0.35s
+        transition: transform 0.35s
+        -webkit-transform: translate3d(-100%,0,0)
+        transform: translate3d(-100%,0,0)
+
+figure.effect-sarah a
+  position: relative
+  overflow: hidden
+  padding: 0.5em 0
+
+figure.effect-sarah a::after
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 3px
+  background: $mainTextp
+  content: ''
+  -webkit-transition: -webkit-transform 0.35s
+  transition: transform 0.35s
+  -webkit-transform: translate3d(-100%,0,0)
+  transform: translate3d(-100%,0,0)
+
+
+figure.effect-sarah:hover a::after
+  -webkit-transform: translate3d(0,0,0)
+  transform: translate3d(0,0,0)
+
+.titleWrapper
+  display: block
+  top: 0
+  left: 0
+  padding: 10px 0 10px
+  text-align: center
+  h3
+    font-family: "Ikra"
+    margin: 0
+
+.mainHead
+  position: relative
+  min-height: 480px
+  .titleWrapper
+    margin-top: 10px
+    padding: 50px
+    vertical-align: middle
+    +transition(all 1s ease)
+    .logo
+      position: relative
+      display: block
+      margin: 30px auto
+      width: 900px
+      padding:  0 0 50px 0
+      +animation-delay(1.1s)
+      svg
+        path
+          fill: $mainLogoColor
+    .mainDescr
+      display: block
+      p
+        font-family: "Anonymous Pro"
+        color: $mainSlog
+        font-size: 1.5rem
+        &:nth-child(1)
+          +animation-delay(1.7s)
+        &:nth-child(2)
+          +animation-delay(1.9s)
+        &:nth-child(3)
+          +animation-delay(1.5s)
+    .sendRequest
+      margin-top: 30px
+      +animation-delay(2.5s)
+      a
+        font-family: "Anonymous Pro"
+
+.btn_clr
+  background: $mainLogoColor
+.btn_clr2
+  background: $fontColor
+
+$imgH: 150px
+
+.about, .portfolio, .watchword
+  position: relative
+  width: 100%
+
+.about
+  p
+    font-size: 1.2rem
+    display: inline-block
+    text-align: justify
+    margin: 20px auto
+    padding: 5px 20px 10px
+  .abImg1, .abImg2, .abImg3
+    display: block
+    position: relative
+    width: 357px
+    height: 357px
+    background: #b3e5fc
+    border-radius: 15px
+  .abImg1
+    background: url("../img/user.jpg") no-repeat
+  .abImg2
+    background: url("../img/corp.jpg") no-repeat
+  .abImg3
+    background: url("../img/site.jpg") no-repeat
+
+.contacts
+  .left
+    border-right: 1px solid $menu
+
+.portfolio
+  margin-bottom: 50px
+  .container
+    width: 1200px
+    margin: 0 auto
+    padding-left: 0
+    padding-right: 0
+    .row
+      width: 1200px
+      margin: 0 0 0
+      .col.s4
+        padding: 0 0 0
+
+.pfItem
+  width: 100%
+  height: 300px
+  margin: 0
+  border: none
+  overflow: hidden
+  position: relative
+  text-align: center
+  cursor: nw-resize
+  .mask
+    width: 100%
+    height: 300px
+    position: absolute
+    overflow: hidden
+    top: 0
+    left: 0
+  img
+    display: block
+    position: relative
+  h2
+    text-transform: uppercase
+    color: #fff
+    text-align: center
+    position: relative
+    font-size: 17px
+    padding: 10px
+    background: rgba(0, 0, 0, 0.8)
+    margin: 20px 0 0 0
+  p
+    font-family: Georgia, serif
+    font-style: italic
+    font-size: 12px
+    position: relative
+    color: #fff
+    padding: 10px 20px 20px
+    text-align: center
+  a.info
+    display: inline-block
+    text-decoration: none
+    padding: 7px 14px
+    background: #000
+    color: #fff
+    text-transform: uppercase
+    box-shadow: 0 0 1px #000
+    &:hover
+      box-shadow: 0 0 5px #000
+
+.view-first
+  img
+    transition: all 0.2s linear
+  &:hover img
+    transform: scale(1.08)
+  .mask, h2, p, a.info
+    opacity: 0
+  &:hover h2, &:hover p, &:hover a.info
+    opacity: 1
+    transform: translateY(0px)
+  .mask
+    background-color: rgba(202,97,64, 0.7)
+    transition: all 0.4s ease-in-out
+    &:hover
+      opacity: 1
+  h2
+    transform: translateY(-100px)
+    transition: all 0.2s ease-in-out
+  p
+    transform: translateY(100px)
+    transition: all 0.2s linear
+    &:hover
+      transition-delay: 0.1s
+  a.info
+    transition: all 0.2s ease-in-out
+    &:hover
+      transition-delay: 0.2s
+
+.watchword, .contacts
+  background: $watchBG
+  min-height: 480px
+  height: 680px
+  .cites
+    display: block
+    width: 100%
+    position: relative
+    blockquote
+      opacity: 0
+      position: absolute
+      display: block
+      margin: 180px 0 10px
+      +animation-delay(1.5s)
+      &:first-of-type
+        opacity: 1
+.contacts
+  h5
+    text-align: center
+  .input-field label
+    color: $fontColor
+  .input-field input[type=text], input[type=email], input[type=tel]
+    &:focus
+      border-bottom: 1px solid $htmlColor
+      box-shadow: 0 1px 0 0 $htmlColor
+
+
+footer
+  background: $loaderBG
+  padding-top: 50px
+  .row
+    margin-bottom: 0
+  p
+    margin: 0
+    padding: 0
+  .copyright
+    text-align: right
+    color: $htmlColor
+  .socButtons
+    height: 80px
+    display: block
+    position: relative
+    a
+      font-size: 16px
+      padding: 10px 12px 8px
+      color: $htmlColor
+      &:hover
+        color: $menu
+  .footMenu
+    width: 100%
+    a
+      display: block
+      position: relative
+      float: left
+      padding: 0
+      margin: 0
+      font-size: 1em
+      text-align: center
+      width: 25%
+      border-right: 1px solid $htmlColor
+      color: $htmlColor
+      &:last-child
+        border: none
+      &:hover
+        text-decoration: underline
+        color: $mainTextp
