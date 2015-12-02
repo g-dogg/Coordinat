@@ -18,9 +18,9 @@ class curlClass
     protected $geoURL = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode="; 
     public $content ="";
     
-    public function __construct() 
+    public function __construct(dbClass $addr) 
     {
-      $this->address = $address;
+      $this->address = $addr;
     }
     
     private function setFullUrl()

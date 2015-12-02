@@ -250,6 +250,7 @@
 	],
 	"file_history":
 	[
+		"/S/HOME/EXCHANGE/moscow_mail.txt",
 		"/S/INVENT/keys.txt",
 		"/C/Users/Ilyash/Desktop/CMD.txt",
 		"/C/Users/Ilyash/Desktop/evening.txt",
@@ -376,8 +377,7 @@
 		"/C/Users/Ilyash/Desktop/1.csv",
 		"/C/Users/Ilyash/Desktop/Upd20x-2.0.23.1159/readme.txt",
 		"/C/Users/Ilyash/Desktop/em.txt",
-		"/C/Users/Ilyash/Desktop/moscow.txt",
-		"/C/Users/Ilyash/Desktop/112313"
+		"/C/Users/Ilyash/Desktop/moscow.txt"
 	],
 	"find":
 	{
@@ -395,6 +395,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[0-9]",
+			"root@sibesbank:~ # cat /etc/passwd \nroot:*:0:0:Charlie &:/root:/bin/tcsh\ntoor:*:0:0:Bourne-again Superuser:/root:/bin/tcsh\ndaemon:*:1:1:Owner of many system processes:/root:/usr/sbin/nologin\noperator:*:2:5:System &:/:/usr/sbin/nologin\nbin:*:3:7:Binaries Commands and Source:/:/usr/sbin/nologin\ntty:*:4:65533:Tty Sandbox:/:/usr/sbin/nologin\nkmem:*:5:65533:KMem Sandbox:/:/usr/sbin/nologin\ngames:*:7:13:Games pseudo-user:/usr/games:/usr/sbin/nologin\nnews:*:8:8:News Subsystem:/:/usr/sbin/nologin\nman:*:9:9:Mister Man Pages:/usr/share/man:/usr/sbin/nologin\nsshd:*:22:22:Secure Shell Daemon:/var/empty:/usr/sbin/nologin\nsmmsp:*:25:25:Sendmail Submission User:/var/spool/clientmqueue:/usr/sbin/nologin\nmailnull:*:26:26:Sendmail Default User:/var/spool/mqueue:/usr/sbin/nologin\nbind:*:53:53:Bind Sandbox:/:/usr/sbin/nologin\nunbound:*:59:59:Unbound DNS Resolver:/var/unbound:/usr/sbin/nologin\nproxy:*:62:62:Packet Filter pseudo-user:/nonexistent:/usr/sbin/nologin\n_pflogd:*:64:64:pflogd privsep user:/var/empty:/usr/sbin/nologin\n_dhcp:*:65:65:dhcp programs:/var/empty:/usr/sbin/nologin\nuucp:*:66:66:UUCP pseudo-user:/var/spool/uucppublic:/usr/local/libexec/uucp/uucico\npop:*:68:6:Post Office Owner:/nonexistent:/usr/sbin/nologin\nauditdistd:*:78:77:Auditdistd unprivileged user:/var/empty:/usr/sbin/nologin\nwww:*:80:80:World Wide Web Owner:/home/www:/bin/tcsh\nhast:*:845:845:HAST unprivileged user:/var/empty:/usr/sbin/nologin\nnobody:*:65534:65534:Unprivileged user:/nonexistent:/usr/sbin/nologin\ncyrus:*:60:60:the cyrus mail server:/nonexistent:/usr/sbin/nologin\nmysql:*:88:88:MySQL Daemon:/var/db/mysql:/usr/sbin/nologin\ndovecot:*:143:143:Dovecot User:/var/empty:/usr/sbin/nologin\ndovenull:*:144:144:Dovecot login User:/var/empty:/usr/sbin/nologin\nkiv:*:10001:10000:kulagin ilya user:/home/mailx:/usr/sbin/nologin\nadmin1c:*:10002:10000:admin1c user:/home/mailx:/usr/sbin/nologin\nklv:*:10003:10000:kulagina liudmila user:/home/mailx:/usr/sbin/nologin\nmon:*:10005:10000:mitrofanova olga user:/home/mailx:/usr/sbin/nologin\nkorsakov:*:10006:10000:korsakov yury user:/home/mailx:/usr/sbin/nologin\npov:*:10007:10000:postevaya olesya user:/home/mailx:/usr/sbin/nologin\ninfoweb:*:10008:10000:World Wide Web Owner:/home/mailx:/sbin/nologin\nsiv:*:10010:10000:Staryh Irina user:/home/mailx:/usr/sbin/nologin\ngen:*:10011:10000:Glekov Evgeny user:/home/mailx:/usr/sbin/nologin\nkoviv:*:10014:10000:Kovaleva I.V. user:/home/mailx:/usr/sbin/nologin\ngef:*:10016:10000:Gorohotov E.V. user:/home/mailx:/usr/sbin/nologin\nsmev:*:10017:10000:smev user:/home/mailx:/usr/sbin/nologin\nmel:*:10021:10000:mel user:/home/mailx:/usr/sbin/nologin\ngvs:*:10023:10000:gvs user:/home/mailx:/usr/sbin/nologin\nbea:*:10024:10000:Bednova Elena:/home/mailx:/usr/sbin/nologin\ngav:*:10025:10000:gav user:/home/mailx:/usr/sbin/nologin\naev:*:10026:10000:Andreev Yevgeny:/home/mailx:/usr/sbin/nologin\nevkonst:*:10027:10000:unknown user for kuzyasheva:/home/mailx:/usr/sbin/nologin\nsyv:*:10028:10000:Sidorova Yulia:/home/mailx:/usr/sbin/nologin\ngiv:*:10029:10000:Gigareva Irina:/home/mailx:/usr/sbin/nologin\nmvg:*:10030:10000:Manushko Vyacheslav:/home/mailx:/usr/sbin/nologin\ninfo:*:10033:10000:info:/home/mailx:/usr/sbin/nologin\ncrmadmin:*:10033:10000:Admin email for crm:/home/mailx:/usr/sbin/nologin\ncrmback:*:10034:10000:Server email for crm:/home/mailx:/usr/sbin/nologin\noav:*:10035:10000:Ohtina Anastasija:/home/mailx:/usr/sbin/nologin\nbti:*:10036:10000:Belozerceva T.I.:/home/mailx:/usr/sbin/nologin\nhav:*:10037:10000:Horoshilov A.V.:/home/mailx:/usr/sbin/nologin\ngev:*:10038:10000:Galkina Elena Viktorovna:/home/mailx:/usr/sbin/nologin\nsaa:*:10039:10000:Skulkin Anton Alexandrovich:/home/mailx:/usr/sbin/nologin\nsng:*:10040:10000:Skulkina Natalya Gennadievna:/home/mailx:/usr/sbin/nologin\nlls:*:10041:10000:Lagutina Lidiya Sergeevna:/home/mailx:/usr/sbin/nologin\nxta:*:10042:10000:Hareva Tatjana Anatolyevna:/mail/mailx:/usr/sbin/nologin\nkma:*:10043:10000:Krasnoperova Maria Anatolyevna:/home/mailx:/usr/sbin/nologin\nias:*:10044:10000:Ilyina Anastasia Sergeevna:/home/mailx:/usr/sbin/nologin\nkgp:*:10045:10000:Kezin Gennagiy Petrovich:/home/mailx:/usr/sbin/nologin\nmvv:*:10046:10000:Mashko Valentin Valerijevich:/home/mailx:/usr/sbin/nologin\nmea:*:10047:10000:Mazina Eva Anatolievna:/home/mailx:/usr/sbin/nologin\npaa:*:10048:10000:Pritula Andrey Anatolievich:/home/mailx:/usr/sbin/nologin\ntvv:*:10049:10000:Tugunova Vlada Victorovna:/home/mailx:/usr/sbin/nologin\nvav:*:10050:10000:Volodina Alexandra Valerjevna:/home/mailx:/usr/sbin/nologin\npta:*:10051:10000:Pritula Tamara Andreevna:/home/mailx:/usr/sbin/nologin\nvvs:*:10052:10000:Vasilevich Valeriy Stepanovich:/home/mailx:/usr/sbin/nologin\nzrv:*:10053:10000:Zamyatina Roza:/home/mailx:/usr/sbin/nologin\nrnn:*:10054:10000:Romashova Natalia:/home/mailx:/usr/sbin/nologin\nchva:*:10055:10000:Cheshskiy Victor:/home/mailx:/usr/sbin/nologin\nmya:*:10056:10000:Mitsura Yulia Aleksandrovna:/home/mailx:/usr/sbin/nologin\nleb:*:10057:10000:Limansky Evgeniy Borisovich:/home/mailx:/usr/sbin/nologin\nsop:*:10058:10000:Samohvalova Oksana Petrovna:/home/mailx/:/usr/sbin/nologin\nttv:*:10059:10000:Tarasova Tatiana:/home/mailx/:/usr/sbin/nologin\nbav:*:10060:10000:Bataeva Anastasia:/home/mailx/:/usr/sbin/nologin\nmaa:*:10061:10000:Murtazaliev Alexandr:/home/maa:/usr/sbin/nologin\nsoa:*:10062:10000:Satsura O.A.:/home/mailx:/usr/sbin/nologin\nkaa:*:10063:10000:Kozynchenko A.A.:/home/mailx:/usr/sbin/nologin\nvpa:*:10064:10000:Vyunov P.A.:/home/mailx:/usr/sbin/nologin\ntav:*:10065:10000:Tolok A V:/home/mailx:/usr/sbin/nologin\nftg:*:10066:10000:Fedoseeva T.G.:/home/mailx:/usr/sbin/nologin",
 			"kassa",
 			"ws01-monster",
 			"CM9QX",
@@ -430,7 +432,7 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 		],
