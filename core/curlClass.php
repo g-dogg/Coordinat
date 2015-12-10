@@ -1,38 +1,19 @@
 <?php
-
 //namespace core\curl;
-
 /**
  * Description of curlCore
  *
  * @author Ilyash
  */
-
-
 class curlClass
 {
     
     protected $options=[];
     public $ch;
-    protected $address = "город Омск, Рабиновича, 132";
+    protected $address;
     protected $geoURL = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode="; 
     public $content ="";
-    
-    public function __construct(dbClass $addr) 
-    {
-      $this->address = $addr;
-    }
-    
-    private function setFullUrl()
-    {
-      return $fullUrl = $this->geoURL . $this->address;
-    }
-    
-    public static function setConfig() 
-    { 
-      
-      
-        return self::$options = array( 
+    public  $options = array( 
             /*CURLOPT_RETURNTRANSFER => true,         // return web page 
             CURLOPT_HEADER         => false,        // don't return headers 
             CURLOPT_FOLLOWLOCATION => true,         // follow redirects 
@@ -49,7 +30,25 @@ class curlClass
             CURLOPT_VERBOSE        => 1,*/
             CURLOPT_PROXY          =>"192.168.20.22:3128",
             ); 
+    
+    
+    public function __construct($addr) 
+    {
+      $this->address = $addr;
     }
+   
+    public function setFullUrl()
+    {
+      $this->fullUrl = $this->geoURL . $this->address;
+    }
+    
+    public function getFullUrl()
+    {
+      return $this->fullUrl;
+    }
+
+
+   
     
     public function getInfo()
     {
