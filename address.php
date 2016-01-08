@@ -14,7 +14,7 @@ $stm1->execute(array('zip'=>$address[0]));
 $zipid = $stm1->fetch(PDO::FETCH_ASSOC);
 if(!empty($zipid))
 {
-  $stm = $db->prepare("INSERT INTO coordinat.address (zipid, street, build, housing) VALUES (:z, :s, :b, :h)");
+  $stm = $db->prepare("INSERT INTO coordinat.address (zipid, street, build, korp) VALUES (:z, :s, :b, :h)");
 $stm->execute(array('z'=>$zipid['id'], 's'=>$address[1], 'b'=>$address[2], 'h'=>$address[3]));
 }
 
