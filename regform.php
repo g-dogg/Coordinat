@@ -1,8 +1,5 @@
-<?php
-
-?>
 	<div class="row">
-            <form class="col s12" action="address.php" method="GET">
+      <form class="col s12" action="index.php" method="GET">
 				<div class="row">
 	      	<div class="input-field col s6">
                     <input placeholder="Почтовый индекс. Например: 644000" name="zipcode" id="zipcode" type="text" maxlength="6" pattern="[0-9]{6}" class="validate">

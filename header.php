@@ -11,3 +11,10 @@
 </head>
 <body>
 	<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<header class="mainHead">
+					<div class="titleWrapper">Найти IT</div>
+				</header>
+			</div>
+		</div>
