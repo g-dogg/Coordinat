@@ -2,12 +2,12 @@
       <form class="col s12" action="index.php" method="GET">
 				<div class="row">
 	      	<div class="input-field col s6">
-            <select>
+            <select name="zipcode">
               <option value="" disabled selected>Выберите Ваш почтовый индекс</option>
               <?php
                 while($row = $zipSelect->fetch())
                 {
-                  echo "<option value=\"" . $row['zipid'] . "\">" . $row['zipcode'] . "</option>";
+                  echo "<option zipcodevalue=\"" . $row['zipid'] . "\">" . $row['zipcode'] . "</option>";
                 }
               ?>
             </select>
