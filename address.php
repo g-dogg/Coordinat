@@ -7,17 +7,15 @@ $address[1] = (string)$_GET['street'];
 $address[2] = (int)$_GET['build'];//filter_input(INPUT_GET, 'build', FILTER_VALIDATE_INT);
 !empty($_GET['housing']) ? $address[3] = $_GET['housing'] : $address[3] = '';
 
-echo var_dump($address);
+//echo var_dump($address);
 
-$stm1 = $db->prepare("SELECT * FROM zipcodes WHERE zip=:zip LIMIT 1");
+$zipSelect = $db->query("SELECT * FROM zipcodes", PDO::FETCH_ASSOC);
+/*
+$stm1 = $db->prepare("SELECT * FROM zipcodes WHERE zipcode=:zip LIMIT 1");
 $stm1->execute(array('zip'=>$address[0]));
 $zipid = $stm1->fetch(PDO::FETCH_ASSOC);
 if(!empty($zipid))
 {
   $stm = $db->prepare("INSERT INTO coordinat.address (zipid, street, build, korp) VALUES (:z, :s, :b, :h)");
 $stm->execute(array('z'=>$zipid['id'], 's'=>$address[1], 'b'=>$address[2], 'h'=>$address[3]));
-}
-
-
-
-echo "Uspeh!";
+}*/

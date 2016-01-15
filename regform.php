@@ -1,8 +1,16 @@
-	<div class="row">
+<div class="row">
       <form class="col s12" action="index.php" method="GET">
 				<div class="row">
 	      	<div class="input-field col s6">
-                    <input placeholder="Почтовый индекс. Например: 644000" name="zipcode" id="zipcode" type="text" maxlength="6" pattern="[0-9]{6}" class="validate">
+            <select>
+              <option value="" disabled selected>Выберите Ваш почтовый индекс</option>
+              <?php
+                while($row = $zipSelect->fetch())
+                {
+                  echo "<option value=\"" . $row['zipid'] . "\">" . $row['zipcode'] . "</option>";
+                }
+              ?>
+            </select>
 	          <label for="zipcode">Почтовый индекс</label>
 	        </div>
 					<div class="input-field col s6">

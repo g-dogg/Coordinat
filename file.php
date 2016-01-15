@@ -6,8 +6,8 @@
  * and open the template in the editor.
  */
 define('path', __DIR__);
-/*include 'fileSort.php';
-
+include 'core/dbClass.php';
+/*
 $indFile = path . '/indexes.txt';
 //$indFile = path . '/ndx.txt';
 
@@ -17,8 +17,6 @@ $ndx = new fileSort;
 
 
 $mas = $ndx->fileRead($indFile);
-
-
 
 
 echo var_dump($mas);*/
@@ -51,3 +49,11 @@ for ($i=0; $i <= count($readed); $i++)
 }
 
 echo var_dump($sorted);
+
+for($i=0; $i<=count($sorted); $i++)
+{
+  $stm = $db->prepare("INSERT INTO coordinat.zipcodes (zipcode) VALUES (:zc)");
+  $stm->execute(array('zc'=>$sorted[$i]));
+  echo '<p>'.$sorted[$i].'</p>';
+  
+}

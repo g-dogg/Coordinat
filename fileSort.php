@@ -16,8 +16,6 @@ class fileSort
 
    public $fileHandler;
    public $sorted = array();
-  
-   public $filename;
    
    public function fileRead($filename)
    {
@@ -34,3 +32,4 @@ class fileSort
     
    } 
 }
+
