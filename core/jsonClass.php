@@ -6,6 +6,7 @@
  */
 class jsonClass 
 {
+    
     public $jsonString;
     public $jsonDecoded;
     public $coords = [];
@@ -19,12 +20,7 @@ class jsonClass
     {
       return $this->jsonString;
     }
-    
-    public  static function Olol()
-    {
-      return "ololo";
-    }
-    
+       
     public static function parsingJson()
     {
       $this->jsonDecoded = json_decode($this->jsonString);

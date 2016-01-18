@@ -202,6 +202,15 @@
 				"buffer_size": 10977,
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"contents": "просьба подготовить информацию для ответа на Постановление МВД России 4/11/26680э от 08.12.2015г. следующего характера:\nСведения о месте установки системы \"Банк -Клиент\" указанных организаций, с указанием IP-адресов и Log-файлов в электронном виде по следующим организациям:\n\n\n1) ООО \"Техноком\" 7718102587 нет\n\n\n2) ООО \"Фобосгрупп\" 7707340678 14443723348867424	Самохин Александр Юрьевич	0630205B919E42	Fri Oct 09 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@b926ed	com.bifit.amon.comps.ui.ru.table.StyledCell@11194c3	com.bifit.amon.comps.ui.ru.table.StyledCell@14a099f\n\n\n3) ООО \"Сфера-Ком\" 7730004850\n14298782824586603	Владимиров Александр Сергеевич	8622A25A919E42	Fri Apr 24 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@288fa3	com.bifit.amon.comps.ui.ru.table.StyledCell@c59a30	com.bifit.amon.comps.ui.ru.table.StyledCell@1bd9669\n14298787081056607	Владимиров Александр Сергеевич		Thu Apr 30 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@1a38e96	com.bifit.amon.comps.ui.ru.table.StyledCell@1984816	com.bifit.amon.comps.ui.ru.table.StyledCell@1484f4f\n14298788787636608	Владимиров Александр Сергеевич		Thu Apr 30 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@858e11	com.bifit.amon.comps.ui.ru.table.StyledCell@16b6e29	com.bifit.amon.comps.ui.ru.table.StyledCell@3a406a\n\n4) ООО \"Телекомпроект\" 7718138431\n14382666709947152	Тюрина Анна Андреевна	8606E159919E42	Thu Jul 30 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@1e6d3b8	com.bifit.amon.comps.ui.ru.table.StyledCell@18baa78	com.bifit.amon.comps.ui.ru.table.StyledCell@77f077\n14382671539027153	Зеленина Оксана Александровна		Tue Aug 04 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@cf84ae	com.bifit.amon.comps.ui.ru.table.StyledCell@15bf8dc	com.bifit.amon.comps.ui.ru.table.StyledCell@1b143e5\n\n\n5) ООО \"Интех\" 7718115297 нет\n\n\n6) ООО \"Информ-Сервис\" 7708243412 14255496576506230	Балашов Алексей Сергеевич	0637215B91483E	Thu Mar 05 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@12766f	com.bifit.amon.comps.ui.ru.table.StyledCell@81f7e1	com.bifit.amon.comps.ui.ru.table.StyledCell@19d1ec5\n\n\n7) ООО \"Инфоальянс\" 7716242331\n\n14297679186446587	Латышев Максим Александрович	0674C15A919E42	Thu Apr 23 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@b0990f	com.bifit.amon.comps.ui.ru.table.StyledCell@704377	com.bifit.amon.comps.ui.ru.table.StyledCell@b3ea6\n\n14382691718177156	Карпова Елена Васильевна		Tue Aug 04 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@3e6d63	com.bifit.amon.comps.ui.ru.table.StyledCell@baeeca	com.bifit.amon.comps.ui.ru.table.StyledCell@337b91\n\n14382695740937158	Карпова Елена Васильевна		Wed Aug 05 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@1f892bf	com.bifit.amon.comps.ui.ru.table.StyledCell@8cad96	com.bifit.amon.comps.ui.ru.table.StyledCell@1b9c4f3\n\n\n\n\n8) ООО \"Нью Баинг Групп\" 7733832570 14289160807976420	Макуня Денис Владимирович	86BD6158919E42	Wed Apr 15 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@1a3ae38	com.bifit.amon.comps.ui.ru.table.StyledCell@a57510	com.bifit.amon.comps.ui.ru.table.StyledCell@3cf4fe\n\n\n\n9) ООО \"Профактор\" 7718175850 - 10548 - 14338455985916777	Малова Юлия Сергеевна	86C2E359919E42	Tue Jun 09 00:00:00 GMT+06:00 2015	com.bifit.amon.comps.ui.ru.table.StyledCell@119eb9a	com.bifit.amon.comps.ui.ru.table.StyledCell@f3d447	com.bifit.amon.comps.ui.ru.table.StyledCell@1544066",
+			"settings":
+			{
+				"buffer_size": 3518,
+				"line_ending": "Windows",
+				"name": "просьба подготовить информацию для ответа на Поста"
+			}
 		}
 	],
 	"build_system": "",
@@ -474,7 +483,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -564,6 +573,97 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 120.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1944,
+								1961
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_name": "просьба подготовить информацию для ответа на Поста",
+							"bh_regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"colorcode": true,
+							"encoding_helper_encoding": "",
+							"incomplete_sync": null,
+							"is_xml": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

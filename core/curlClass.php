@@ -32,27 +32,24 @@ class curlClass
             ); 
     
     
-    public function __construct($addr) 
+    public function setAddr($addr) 
     {
       $this->address = $addr;
     }
    
-    public function setFullUrl()
+    public static function setFullUrl()
     {
-      $this->fullUrl = $this->geoURL . $this->address;
+      return $fullUrl = $this->geoURL . $this->address;
     }
     
     public function getFullUrl()
     {
-      return $this->fullUrl;
+      return self::$fullUrl;
     }
-
-
-   
     
     public function getInfo()
     {
-        $ch      = curl_init($this->setFullUrl()); 
+        $ch      = curl_init(self::$setFullUrl()); 
         curl_setopt_array($this->ch, $this->options); 
         $content = curl_exec($this->ch); 
         /*$err     = curl_errno($ch); 
