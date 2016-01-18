@@ -8,10 +8,10 @@
 class curlClass
 {
     
-    protected $options=[];
+    
     public $ch;
-    protected $address;
-    protected $geoURL = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode="; 
+    public $address;
+    static public $geoURL = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode="; 
     public $content ="";
     public  $options = array( 
             /*CURLOPT_RETURNTRANSFER => true,         // return web page 
@@ -30,26 +30,20 @@ class curlClass
             CURLOPT_VERBOSE        => 1,*/
             CURLOPT_PROXY          =>"192.168.20.22:3128",
             ); 
-    
+   
+    public  function test()
+    {
+      return "Complited!";
+    }
     
     public function setAddr($addr) 
     {
-      $this->address = $addr;
+      return $address = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode=" . $addr;
     }
-   
-    public static function setFullUrl()
-    {
-      return $fullUrl = $this->geoURL . $this->address;
-    }
-    
-    public function getFullUrl()
-    {
-      return self::$fullUrl;
-    }
-    
+ 
     public function getInfo()
     {
-        $ch      = curl_init(self::$setFullUrl()); 
+        $ch      = curl_init($this->address); 
         curl_setopt_array($this->ch, $this->options); 
         $content = curl_exec($this->ch); 
         /*$err     = curl_errno($ch); 
@@ -60,7 +54,6 @@ class curlClass
   //  $header['errno']   = $err; 
   //  $header['errmsg']  = $errmsg; 
   //  $header['content'] = $content; 
-    return $this->content; 
-    }
-    
+      return $this->content; 
+    }   
 }

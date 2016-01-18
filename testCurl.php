@@ -1,9 +1,10 @@
 <?php
+define('path', __DIR__);
+include_once path.'/core/curlClass.php';
 
-include 'core/curlClass.php';
+$tc = new curlClass;
 
-$tc = new curlClass();
+$lol = $tc->setAddr("г.Омск, ул. Омская, 115");
 
-$adrTest = $tc->setAddr("Омска, 122");
-
-echo $tc->getInfo();
+$lol2 = $tc->getInfo();
+echo var_dump($lol2);
