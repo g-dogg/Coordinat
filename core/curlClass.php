@@ -7,12 +7,8 @@
  */
 class curlClass
 {
-    
-    
-    public $ch;
     public $address;
     static public $geoURL = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode="; 
-    public $content ="";
     public  $options = array( 
             /*CURLOPT_RETURNTRANSFER => true,         // return web page 
             CURLOPT_HEADER         => false,        // don't return headers 
@@ -30,30 +26,25 @@ class curlClass
             CURLOPT_VERBOSE        => 1,*/
             CURLOPT_PROXY          =>"192.168.20.22:3128",
             ); 
-   
-    public  function test()
+       
+    function __construct($addr) 
     {
-      return "Complited!";
-    }
-    
-    public function setAddr($addr) 
-    {
-      return $address = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode=" . $addr;
+      $this->address = self::$geoURL . $addr;
     }
  
     public function getInfo()
     {
         $ch      = curl_init($this->address); 
-        curl_setopt_array($this->ch, $this->options); 
-        $content = curl_exec($this->ch); 
+        curl_setopt_array($ch, $this->options); 
+        $content = curl_exec($ch); 
         /*$err     = curl_errno($ch); 
         $errmsg  = curl_error($ch) ; 
         $header  = curl_getinfo($ch); */
-        curl_close($this->ch); 
+        curl_close($ch); 
 
   //  $header['errno']   = $err; 
   //  $header['errmsg']  = $errmsg; 
   //  $header['content'] = $content; 
-      return $this->content; 
+      return $content; 
     }   
 }

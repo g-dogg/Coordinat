@@ -8,14 +8,18 @@ class jsonClass
 {
     
     public $jsonString;
-    public $jsonDecoded;
     public $coords = [];
-            
+    /*        
     function __construct($json)
     {
       $this->jsonString = $json;
     }
+    */
     
+    public function setJson($json)
+    {
+      $this->jsonString = $json;
+    }
     public function getJson()
     {
       return $this->jsonString;
@@ -23,8 +27,8 @@ class jsonClass
        
     public static function parsingJson()
     {
-      $this->jsonDecoded = json_decode($this->jsonString);
-      return $this->jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
+      $jsonDecoded = json_decode($this->jsonString);
+      return $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
     }
     
     public function cuttingCoord()

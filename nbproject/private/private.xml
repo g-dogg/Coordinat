@@ -5,10 +5,11 @@
         <group>
             <file>file:/D:/projects/Coordinat/regform.php</file>
             <file>file:/D:/projects/Coordinat/js/common.js</file>
+            <file>file:/D:/projects/Coordinat/core/curlClass.php</file>
             <file>file:/D:/projects/Coordinat/index.php</file>
             <file>file:/D:/projects/Coordinat/core/jsonClass.php</file>
             <file>file:/D:/projects/Coordinat/address.php</file>
-            <file>file:/D:/projects/Coordinat/core/dbClass.php</file>
+            <file>file:/D:/projects/Coordinat/testCurl.php</file>
         </group>
     </open-files>
 </project-private>
