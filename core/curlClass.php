@@ -7,9 +7,9 @@
  */
 class curlClass
 {
-    public $address;
-    static public $geoURL = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode="; 
-    public  $options = array( 
+    private $address;
+    private $content;
+    private $options = array( 
             /*CURLOPT_RETURNTRANSFER => true,         // return web page 
             CURLOPT_HEADER         => false,        // don't return headers 
             CURLOPT_FOLLOWLOCATION => true,         // follow redirects 
@@ -24,19 +24,20 @@ class curlClass
             CURLOPT_SSL_VERIFYHOST => 0,            // don't verify ssl 
             CURLOPT_SSL_VERIFYPEER => false,        // 
             CURLOPT_VERBOSE        => 1,*/
-            CURLOPT_PROXY          =>"192.168.20.22:3128",
+            //CURLOPT_PROXY          =>"192.168.20.22:3128",
             ); 
        
-    function __construct($addr) 
+    
+    public function __construct($addr)
     {
-      $this->address = self::$geoURL . $addr;
+        $this->address = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode=" . $addr . "&results=1";
     }
- 
+    
     public function getInfo()
     {
         $ch      = curl_init($this->address); 
         curl_setopt_array($ch, $this->options); 
-        $content = curl_exec($ch); 
+        $this->content = curl_exec($ch); 
         /*$err     = curl_errno($ch); 
         $errmsg  = curl_error($ch) ; 
         $header  = curl_getinfo($ch); */
@@ -45,6 +46,10 @@ class curlClass
   //  $header['errno']   = $err; 
   //  $header['errmsg']  = $errmsg; 
   //  $header['content'] = $content; 
-      return $content; 
+      return $this; 
     }   
 }
+
+$test1 = new curlClass("Омск, ул. Карла Маркса, 10");
+echo var_dump($test1);
+echo var_dump($test1->getInfo());

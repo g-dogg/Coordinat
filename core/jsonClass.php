@@ -25,7 +25,7 @@ class jsonClass
       return $this->jsonString;
     }
        
-    public static function parsingJson()
+    public function parsingJson()
     {
       $jsonDecoded = json_decode($this->jsonString);
       return $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
@@ -33,7 +33,7 @@ class jsonClass
     
     public function cuttingCoord()
     {
-      $coords = explode(" ", self::parsingJson());
+      $coords = explode(" ", $this->parsingJson());
       return $coords;         
     }
 }
