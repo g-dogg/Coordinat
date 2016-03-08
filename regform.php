@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col s12 m4 l2">&nbsp;</div>
   <div class="col s12 m6 l8">
-    <form  action="index.php" method="GET">
+    <form  action="address.php" method="GET">
     	<div class="row">
         <div class="input-field col s12">
 					<input placeholder="Ваше имя" name="username" id="username" type="text" class="validate">
@@ -17,7 +17,7 @@
             <?php
               while($row = $zipSelect->fetch())
               {
-                echo "<option zipcodevalue=\"" . $row['zipid'] . "\">" . $row['zipcode'] . "</option>";
+                echo "<option zipcodevalue=\"" . $row['id'] . "\">" . $row['zipcode'] . "</option>";
               }
             ?>
           </select>
