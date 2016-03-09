@@ -14,7 +14,15 @@
 class userClass 
 {
     private $username;
+    private $email;
     private $password;
+    private $firstname;
+    private $lastname;
+    private $age;
     
     
+    public function setUser()
+    {
+      
+    }
 }

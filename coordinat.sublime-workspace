@@ -195,15 +195,6 @@
 	},
 	"buffers":
 	[
-		{
-			"contents": "{\n	\"response\":\n	{\n		\"GeoObjectCollection\":\n		{	\n			\"metaDataProperty\":\n			{\"\n				GeocoderResponseMetaData\":\n				{\n					\"request\":\"г.Омск, ул. Омская, 115\",\"found\":\"6\",\"results\":\"1\"\n				}\n			},\n			\"featureMember\":[\n			{\n				\"GeoObject\":\n				{\n					\"metaDataProperty\":\n					{\n						\"GeocoderMetaData\":\n						{\n							\"kind\":\"house\",\"text\":\"Россия, Омск, Омская улица, 115\",\"precision\":\"exact\",\"AddressDetails\":\n							{\n								\"Country\":\n								{\n									\"AddressLine\":\"Омск, Омская улица, 115\",\"CountryNameCode\":\"RU\",\"CountryName\":\"Россия\",\"AdministrativeArea\":\n									{\n										\"AdministrativeAreaName\":\"Омская область\",\"SubAdministrativeArea\":\n										{\n											\"SubAdministrativeAreaName\":\"городской округ Омск\",\"Locality\":\n											{\n												\"LocalityName\":\"Омск\",\"Thoroughfare\":\n												{\n													\"ThoroughfareName\":\"Омская улица\",\"Premise\":\n													{\n														\"PremiseNumber\":\"115\"\n													}\n												}\n											}\n										}\n									}\n								}\n							}\n						}\n					},\n					\"description\":\"Омск, Россия\",\"name\":\"Омская улица, 115\",\"boundedBy\":\n					{\n						\"Envelope\":\n						{\n							\"lowerCorner\":\"73.394551 54.986077\",\"upperCorner\":\"73.411008 54.99554\"\n						}\n					},\n					\"Point\":\n					{\n						\"pos\":\"73.402779 54.990809\"\n					}\n				}\n			}]\n		}\n	}\n}",
-			"settings":
-			{
-				"buffer_size": 1307,
-				"line_ending": "Windows",
-				"name": "{"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -258,15 +249,14 @@
 	},
 	"expanded_folders":
 	[
-		"/D/projects/Coordinat",
 		"/D/projects/Coordinat/core",
 		"/D/projects/Coordinat/css",
 		"/D/projects/Coordinat/css/sass"
 	],
 	"file_history":
 	[
-		"/D/projects/Snoopy.class.php",
 		"/C/Users/Ilyash/Desktop/Разное.txt",
+		"/D/projects/Snoopy.class.php",
 		"/C/Users/Ilyash/AppData/Local/Temp/7zO1392.tmp/Snoopy.class.php",
 		"/D/projects/Coordinat/indexes.txt",
 		"/D/Documents/moscow_mail.txt",
@@ -475,101 +465,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1307,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1229,
-								1229
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"auto_name": "{",
-							"bh_regions":
-							[
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content"
-							],
-							"colorcode": true,
-							"default_dir": "D:\\projects\\Coordinat",
-							"encoding_helper_encoding": "",
-							"incomplete_sync": null,
-							"is_xml": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
