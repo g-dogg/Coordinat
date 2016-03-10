@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col s12 m4 l2">&nbsp;</div>
   <div class="col s12 m6 l8">
-    <form  action="address.php" method="GET">
+    <form  action="core/formClass.php" method="GET">
     	<div class="row">
         <div class="input-field col s12">
 					<input placeholder="Ваше имя" name="username" id="username" type="text" class="validate">
