@@ -59,7 +59,10 @@ class formClass
 }
 
 $pCl = new formClass;
-//$pCl->postArray();
-$pCl->validateFormData();
-echo var_dump($pCl);
 
+$pCl->validateFormData();
+
+foreach ($pCl->getPostArray() as $key => $val)
+{
+  echo $key . " --- " . $val . "<br />";
+}
