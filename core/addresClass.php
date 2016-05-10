@@ -1,11 +1,4 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of addrersClass
  *
@@ -20,9 +13,9 @@ class addresClass
             //TODO: сделать несколкьо функций, выборка одного поля или всех
         }
     }
-    
+
     public function updateAddress()
     {
-        
+
     }
 }
