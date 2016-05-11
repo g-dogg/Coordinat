@@ -1,6 +1,6 @@
 <?php
 
-namespace Coordinat\core\test;
+namespace core\test;
 
 class test
 {

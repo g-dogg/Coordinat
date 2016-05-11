@@ -1,6 +1,11 @@
 <?php
-	require_once SplClassLoader.php;
+    namespace coordinat;
+	require_once 'SplClassLoader.php';
+        
+        $path = __DIR__;
+        echo $path;
 
-$classLoader = new SplClassLoader('Coordinat\core', '/home/note/Projects/Coordinat');
-$classLoader->register();
+        $classLoader = new SplClassLoader('coordinat\core', $path);
+        $classLoader->register();
 
+         

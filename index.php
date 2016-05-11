@@ -1,14 +1,14 @@
 <?php
-namespace Coordinat;
-use \Coordinat\core\test;
-//include_once 'core/test.php';
+namespace coordinat;
+
+use \core\test\test;
 
 include_once 'header.php';
 
 include_once 'bootstrap.php';
+//include_once 'core/test.php';
 
-
-$tst = new \Coordinat\core\test\test;
+$tst = new test;
 echo $tst->testHello();
 
 
