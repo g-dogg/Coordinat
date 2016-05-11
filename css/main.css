@@ -202,7 +202,7 @@ figure.effect-sarah:hover a::after {
 
 .mainHead {
   position: relative;
-  min-height: 480px; }
+  min-height: 80px; }
   .mainHead .titleWrapper {
     margin-top: 10px;
     padding: 50px;

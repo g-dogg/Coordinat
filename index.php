@@ -1,14 +1,15 @@
 <?php
+namespace Coordinat;
+use \Coordinat\core\test;
+//include_once 'core/test.php';
 
-define('path', __DIR__);
-
-include_once path . '/core/dbClass.php';
-include_once 'address.php';
 include_once 'header.php';
 
-include 'userRegForm.php';
+include_once 'bootstrap.php';
 
 
+$tst = new \Coordinat\core\test\test;
+echo $tst->testHello();
 
 
 include_once 'footer.php';
