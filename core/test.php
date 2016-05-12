@@ -1,11 +1,9 @@
 <?php
 
-namespace core\test;
-
 class test
 {
 	public function testHello()
 	{
-		return "It's mothafuckahh work!";
+		return "<h1>It's mothafuckahh work!!!</h1>";
 	}
 }

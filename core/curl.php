@@ -5,7 +5,7 @@
  *
  * @author Ilyash
  */
-class curlClass
+class curl
 {
     private $address;
     private $content;
@@ -49,7 +49,8 @@ class curlClass
       return $this; 
     }   
 }
-
+/*
 $test1 = new curlClass("Омск, ул. Карла Маркса, 10");
 echo var_dump($test1);
 echo var_dump($test1->getInfo());
+*/

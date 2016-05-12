@@ -4,10 +4,14 @@
  *
  * @author g-dogg
  */
-namespace Coordinat\core\addres
 
-class addres
+class address
 {
+    public function testAddress()
+    {
+        return "Classname is ".__CLASS__;
+    }
+    /*
     public function selectAddress($where, $field, $oredering)
     {
         if(isset($where) and isset($field))
@@ -19,5 +23,5 @@ class addres
     public function updateAddress()
     {
 
-    }
+    }*/
 }

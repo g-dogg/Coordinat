@@ -1,8 +1,6 @@
 <?php
-	/**
-	*
-	*/
-class configClass
+
+class config
 {
   private static $dbConfig = [
     'dsn'=>'mysql:host=localhost;dbname=coordinat',
@@ -13,6 +11,6 @@ class configClass
 
 	public function getDbConfig()
 	{
-    return self::$dbConfig;
+            return self::$dbConfig;
 	}
 }

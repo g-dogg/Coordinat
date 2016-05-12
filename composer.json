@@ -1,0 +1,16 @@
+{
+    "autoload": {
+        "classmap": [
+            "core/"
+        ]
+    },
+    "name": "web/coordinat",
+    "description": "back-end for \"HaumuIT\"",
+    "authors": [
+        {
+            "name": "Ilya Shishkin",
+            "email": "g_dogg@xakep.ru"
+        }
+    ],
+    "require": {}
+}

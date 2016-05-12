@@ -4,7 +4,7 @@
  *
  * @author g-dogg
  */
-class jsonClass 
+class json 
 {
     
     public $jsonString;
