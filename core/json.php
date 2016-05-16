@@ -4,18 +4,19 @@
  *
  * @author g-dogg
  */
-class json 
+class json
 {
-    
+
     public $jsonString;
     public $coords = [];
-    /*        
+    private $crdArr = [];
+    /*
     function __construct($json)
     {
       $this->jsonString = $json;
     }
     */
-    
+
     public function setJson($json)
     {
       $this->jsonString = $json;
@@ -24,16 +25,17 @@ class json
     {
       return $this->jsonString;
     }
-       
+
     public function parsingJson()
     {
       $jsonDecoded = json_decode($this->jsonString);
-      return $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
+      $this->crdArr = $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
+      return $this;
     }
-    
+
     public function cuttingCoord()
     {
-      $coords = explode(" ", $this->parsingJson());
-      return $coords;         
+      $coords = explode(" ", $this->crdArr);
+      return $coords;
     }
 }

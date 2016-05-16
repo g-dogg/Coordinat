@@ -7,16 +7,16 @@
 
 class address
 {
-    public function testAddress()
-    {
-        return "Classname is ".__CLASS__;
-    }
-    /*
+
     public function selectAddress($where, $field, $oredering)
     {
-        if(isset($where) and isset($field))
+        if(isset($where) and isset($field) and isset($oredering))
         {
-            //TODO: сделать несколько функций, выборка одного поля или всех
+            $query = "select {$field} from {$where} order by {$oredering}";
+        }
+        elseif ()
+        {
+            # code...
         }
     }
 
