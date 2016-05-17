@@ -239,7 +239,7 @@
 			"file": "core/address.php",
 			"settings":
 			{
-				"buffer_size": 380,
+				"buffer_size": 445,
 				"line_ending": "Unix"
 			}
 		},
@@ -247,7 +247,7 @@
 			"file": "core/test.php",
 			"settings":
 			{
-				"buffer_size": 124,
+				"buffer_size": 103,
 				"line_ending": "Unix"
 			}
 		},
@@ -255,7 +255,7 @@
 			"file": "bootstrap.php",
 			"settings":
 			{
-				"buffer_size": 154,
+				"buffer_size": 234,
 				"line_ending": "Unix"
 			}
 		},
@@ -263,7 +263,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 237,
+				"buffer_size": 239,
 				"line_ending": "Unix"
 			}
 		},
@@ -337,8 +337,7 @@
 	},
 	"expanded_folders":
 	[
-		"/home/note/Projects/Coordinat",
-		"/home/note/Projects/Coordinat/css"
+		"/D/Web_Projects/Coordinat"
 	],
 	"file_history":
 	[
@@ -561,15 +560,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 380,
+						"buffer_size": 445,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								97,
-								97
+								0,
+								0
 							]
 						],
 						"settings":
@@ -656,15 +655,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 124,
+						"buffer_size": 103,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7,
-								7
+								0,
+								0
 							]
 						],
 						"settings":
@@ -750,15 +749,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 154,
+						"buffer_size": 234,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								114,
-								123
+								0,
+								0
 							]
 						],
 						"settings":
@@ -843,15 +842,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 237,
+						"buffer_size": 239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								32,
-								32
+								0,
+								0
 							]
 						],
 						"settings":
