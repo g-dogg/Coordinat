@@ -12,5 +12,7 @@
             "email": "g_dogg@xakep.ru"
         }
     ],
-    "require": {}
+    "require": {
+        "corneltek/pux": "~1.5"
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-class routerClass
+class router
 {
 	private $requestUrl;
 	private $componentsArray = [];
