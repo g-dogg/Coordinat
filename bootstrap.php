@@ -1,11 +1,9 @@
 <?php
-    namespace coordinat;
-	require_once 'SplClassLoader.php';
-        
-        $path = __DIR__;
-        echo $path;
+use Routing\Router;
+require 'vendor/autoload.php';
+include 'Routing/Router.php';
+include 'controllers/controller.php';
+include 'views/view.php';
 
-        $classLoader = new SplClassLoader('coordinat\core', $path);
-        $classLoader->register();
-
-         
+$view = new View;
+$controller = new Controller($view);

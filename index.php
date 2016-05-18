@@ -1,12 +1,12 @@
 <?php
 use Routing\Router;
+include_once 'bootstrap.php';
 
-include_once 'header.php';
-require 'vendor/autoload.php';
-
-$host = 'http://192.168.7.7';
+$host = 'http://localhost';
 $router = new Router($host);
+echo $_SERVER['REQUEST_URI'];
+$router->add('/', '/', 'controller:index');
+
+echo "<br>eshe odin lol";
 
 
-
-include_once 'footer.php';

@@ -1,10 +1,11 @@
 {
     "autoload": {
-        "psr-4": {
-            "Routing\\": "src/Routing"
-        },
+        "psr-4": {},
         "classmap": [
-            "core/"
+            "core/",
+            "Routing/",
+            "controllers/",
+            "views/"
         ]
     },
     "name": "web/coordinat",
@@ -15,7 +16,5 @@
             "email": "g_dogg@xakep.ru"
         }
     ],
-    "require": {
-        "corneltek/pux": "~1.5"
-    }
+    "require": {}
 }

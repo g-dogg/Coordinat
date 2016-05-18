@@ -6,6 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Controller' => $baseDir . '/controllers/controller.php',
+    'Routing\\MatchedRoute' => $baseDir . '/Routing/MatchedRoute.php',
+    'Routing\\Request' => $baseDir . '/Routing/Request.php',
+    'Routing\\Router' => $baseDir . '/Routing/Router.php',
+    'Routing\\UrlGenerator' => $baseDir . '/Routing/UrlGenerator.php',
+    'Routing\\UrlMatcher' => $baseDir . '/Routing/UrlMatcher.php',
+    'Routing\\Utils' => $baseDir . '/Routing/Utils.php',
+    'View' => $baseDir . '/views/view.php',
     'address' => $baseDir . '/core/address.php',
     'config' => $baseDir . '/core/config.php',
     'curlCl' => $baseDir . '/core/curlCl.php',
