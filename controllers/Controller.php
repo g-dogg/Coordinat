@@ -18,13 +18,6 @@ class Controller
 
  	public function indexAction()
  	{
- 		$this->view->render('main', 'olololololo');
+
  	}
-
- 	public function cabinetAction()
- 	{
- 		$this->view->render('cabinet');
- 	}
-
-
 }
