@@ -1,11 +1,7 @@
 <?php
-use Routing\Router;
+ini_set('display_errors', 1);
 include_once 'bootstrap.php';
 
-$host = 'http://localhost';
-$router = new Router($host);
-echo $_SERVER['REQUEST_URI'];
-$router->add('/', '/', 'controller:index');
 
 echo "<br>eshe odin lol";
 

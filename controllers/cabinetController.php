@@ -21,4 +21,9 @@ class cabinetController extends Controller
 	{
 		$this->view->render('editAddress');
 	}
+
+	public function testAction()
+	{
+		echo __CLASS__;
+	}
 }

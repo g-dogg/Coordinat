@@ -1,9 +1,9 @@
 <?php
-use Routing\Router;
-require 'vendor/autoload.php';
-include 'Routing/Router.php';
-include 'controllers/controller.php';
+
+//require 'vendor/autoload.php';
+include 'core/router.php';
+include 'controllers/Controller.php';
+include 'controllers/cabinetController.php';
 include 'views/view.php';
 
-$view = new View;
-$controller = new Controller($view);
+Router::start();
