@@ -1,9 +1,8 @@
 <?php
 
 //require 'vendor/autoload.php';
-include 'core/router.php';
-include 'controllers/Controller.php';
-include 'controllers/cabinetController.php';
-include 'views/view.php';
+require_once 'core/router.php';
+require_once 'controllers/Controller.php';
+require_once 'views/view.php';
 
 Router::start();

@@ -4,7 +4,8 @@ class cabinetController extends Controller
 {
 	public function indexAction()
 	{
-		$this->views->render('cabinetIndex');
+		$this->view->render('cabinetIndex');
+		//echo "fuck yo bitchezz bitch " . __CLASS__;
 	}
 
 	public function addProblemAction()

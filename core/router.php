@@ -3,20 +3,18 @@
 class Router
 {
 	private $requestUrl;
-	//private $componentsArray = [];
-
 
 	static function start()
 	{
-		$controllerName  = 'main';
+		$controllerName  = 'index';
 		$actionName = 'index';
 		$componentsArray = explode("/", $_SERVER['REQUEST_URI']);
+
 
 		if(!empty($componentsArray[1]))
 		{
 			$controllerName = $componentsArray[1];
 		}
-
 
 		if(!empty($componentsArray[2]))
 		{
@@ -27,27 +25,34 @@ class Router
 		$controllerName = $controllerName . "Controller";
 		$actionName = $actionName . "Action";
 
-		$modelFile = strtolower($modelName ) . ".php";
-		$modelPath = "../models/" . $modelFile;
+		$modelFile = $modelName . ".php";
+		$modelPath = "models/" . $modelFile;
 		if(file_exists($modelPath))
 		{
-			include "../models/" . $modelFile;
+			include "models/" . $modelFile;
 		}
 
 
-		$controllerFile = strtolower($controllerName) . ".php";
-		$controllerPath = "../controllers/" . $controllerFile;
+		$controllerFile = $controllerName . ".php";
+		$controllerPath = "controllers/" . $controllerFile;
 		if(file_exists($controllerPath))
 		{
-			include "../controllers/" . $controllerFile;
+			try
+			{
+				include $controllerPath;
+			}
+			catch (Exception $e)
+			{
+				echo $e;
+			}
+
 		}
 		else
 		{
-
 			Router::ErrorPage404();
 		}
-
-		$controller = new $controllerName;
+		$view = new View;
+		$controller = new $controllerName($view);
 		$action = $actionName;
 		if(method_exists($controller, $action))
 		{
@@ -58,16 +63,16 @@ class Router
 
 			Router::ErrorPage404();
 		}
-
+		/**/
 	}
 
 
-		static function ErrorPage404()
-		{
-        		$host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-        		header('HTTP/1.1 404 Not Found');
-			header("Status: 404 Not Found");
-			header('Location:'.$host.'404');
-		}
+	static function ErrorPage404()
+	{
+      	$host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+      	header('HTTP/1.1 404 Not Found');
+		header("Status: 404 Not Found");
+		header('Location:'.$host.'404');
+	}
 
 }
