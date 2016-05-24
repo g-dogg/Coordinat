@@ -1,16 +1,21 @@
 <?php
 
-class config
+class Config
 {
-  private static $dbConfig = [
-    'dsn'=>'mysql:host=localhost;dbname=coordinat',
-		'username'=>'root',
-		'password'=>'1234',
-		'charset'=>'utf8',
+    private static $dbConfig = [
+        'dsn'=>'mysql:host=localhost;dbname=coordinat',
+            'username'=>'root',
+            'password'=>'1234',
+            'charset'=>'utf8'
 	];
-
-	public function getDbConfig()
-	{
-            return self::$dbConfig;
-	}
+    
+    public function getDbConfig()
+    {
+        return self::$dbConfig;
+    }
+    
+    public static function getRootPath()
+    {
+        return $_SERVER['DOCUMENT_ROOT'];
+    }
 }

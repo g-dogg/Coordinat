@@ -1,9 +1,9 @@
 <?php
 
-class indexController //extends Controller
+class indexController extends Controller
 {
 	public function indexAction()
 	{
-		echo "mainpage mothafucka!";
+            $this->view->render('main', __CLASS__);
 	}
 }

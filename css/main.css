@@ -194,15 +194,14 @@ figure.effect-sarah:hover a::after {
   display: block;
   top: 0;
   left: 0;
-  padding: 10px 0 10px;
+  padding: 40px 0 60px;
   text-align: center; }
   .titleWrapper h3 {
-    font-family: "Ikra";
     margin: 0; }
 
 .mainHead {
   position: relative;
-  min-height: 80px; }
+  min-height: 480px; }
   .mainHead .titleWrapper {
     margin-top: 10px;
     padding: 50px;
@@ -226,7 +225,6 @@ figure.effect-sarah:hover a::after {
     .mainHead .titleWrapper .mainDescr {
       display: block; }
       .mainHead .titleWrapper .mainDescr p {
-        font-family: "Anonymous Pro";
         color: #ffebee;
         font-size: 1.5rem; }
         .mainHead .titleWrapper .mainDescr p:nth-child(1) {
@@ -246,138 +244,46 @@ figure.effect-sarah:hover a::after {
       -webkit-animation-delay: 2.5s;
       -moz-animation-delay: 2.5s;
       animation-delay: 2.5s; }
-      .mainHead .titleWrapper .sendRequest a {
-        font-family: "Anonymous Pro"; }
 
 .btn_clr {
-  background: #CA6144; }
+  background: #CA6144;
+  border-radius: 8px; }
 
 .btn_clr2 {
   background: #393E51; }
 
-.about, .portfolio, .watchword {
+.about, .watchword {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  min-height: 800px; }
 
 .about p {
   font-size: 1.2rem;
   display: inline-block;
   text-align: justify;
   margin: 20px auto;
-  padding: 5px 20px 10px; }
-.about .abImg1, .about .abImg2, .about .abImg3 {
+  padding: 5px 5px 10px; }
+.about .abImg1, .about .abImg2, .about .abImg3, .about .abImg4 {
+  border-bottom: 2px solid #393E51;
   display: block;
-  position: relative;
-  width: 357px;
-  height: 357px;
-  background: #b3e5fc;
-  border-radius: 15px; }
-.about .abImg1 {
-  background: url("../img/user.jpg") no-repeat; }
-.about .abImg2 {
-  background: url("../img/corp.jpg") no-repeat; }
-.about .abImg3 {
-  background: url("../img/site.jpg") no-repeat; }
+  position: relative; }
+  .about .abImg1 .fa, .about .abImg2 .fa, .about .abImg3 .fa, .about .abImg4 .fa {
+    margin: 0 auto;
+    display: block;
+    text-align: center; }
 
 .contacts .left {
   border-right: 1px solid #265D6B; }
 
-.portfolio {
-  margin-bottom: 50px; }
-  .portfolio .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0; }
-    .portfolio .container .row {
-      width: 1200px;
-      margin: 0 0 0; }
-      .portfolio .container .row .col.s4 {
-        padding: 0 0 0; }
-
-.pfItem {
-  width: 100%;
-  height: 300px;
-  margin: 0;
-  border: none;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: nw-resize; }
-  .pfItem .mask {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0; }
-  .pfItem img {
-    display: block;
-    position: relative; }
-  .pfItem h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-    margin: 20px 0 0 0; }
-  .pfItem p {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 12px;
-    position: relative;
-    color: #fff;
-    padding: 10px 20px 20px;
-    text-align: center; }
-  .pfItem a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    background: #000;
-    color: #fff;
-    text-transform: uppercase;
-    box-shadow: 0 0 1px #000; }
-    .pfItem a.info:hover {
-      box-shadow: 0 0 5px #000; }
-
-.view-first img {
-  transition: all 0.2s linear; }
-.view-first:hover img {
-  transform: scale(1.08); }
-.view-first .mask, .view-first h2, .view-first p, .view-first a.info {
-  opacity: 0; }
-.view-first:hover h2, .view-first:hover p, .view-first:hover a.info {
-  opacity: 1;
-  transform: translateY(0px); }
-.view-first .mask {
-  background-color: rgba(202, 97, 64, 0.7);
-  transition: all 0.4s ease-in-out; }
-  .view-first .mask:hover {
-    opacity: 1; }
-.view-first h2 {
-  transform: translateY(-100px);
-  transition: all 0.2s ease-in-out; }
-.view-first p {
-  transform: translateY(100px);
-  transition: all 0.2s linear; }
-  .view-first p:hover {
-    transition-delay: 0.1s; }
-.view-first a.info {
-  transition: all 0.2s ease-in-out; }
-  .view-first a.info:hover {
-    transition-delay: 0.2s; }
-
-.watchword, .contacts {
+.contacts {
   background: #CA6144;
-  min-height: 480px;
+  min-height: 800px;
   height: 680px; }
-  .watchword .cites, .contacts .cites {
+  .contacts .cites {
     display: block;
     width: 100%;
     position: relative; }
-    .watchword .cites blockquote, .contacts .cites blockquote {
+    .contacts .cites blockquote {
       opacity: 0;
       position: absolute;
       display: block;
@@ -385,7 +291,7 @@ figure.effect-sarah:hover a::after {
       -webkit-animation-delay: 1.5s;
       -moz-animation-delay: 1.5s;
       animation-delay: 1.5s; }
-      .watchword .cites blockquote:first-of-type, .contacts .cites blockquote:first-of-type {
+      .contacts .cites blockquote:first-of-type {
         opacity: 1; }
 
 .contacts h5 {
@@ -395,6 +301,20 @@ figure.effect-sarah:hover a::after {
 .contacts .input-field input[type=text]:focus, .contacts input[type=email]:focus, .contacts input[type=tel]:focus {
   border-bottom: 1px solid #E9E6C9;
   box-shadow: 0 1px 0 0 #E9E6C9; }
+
+.cabinet {
+  min-height: 800px; }
+  .cabinet .leftButton, .cabinet .avatar, .cabinet .rightButton {
+    display: block;
+    position: relative; }
+  .cabinet .leftButton button, .cabinet .rightButton button, .cabinet .setReq button {
+    margin: 10px 5px 30px;
+    width: 100%; }
+  .cabinet .avatar img {
+    height: 200px;
+    width: 180px; }
+  .cabinet .avatar button {
+    margin: 2px 4px 1px; }
 
 footer {
   background: #566683;
