@@ -3,7 +3,7 @@
         "psr-4": {},
         "classmap": [
             "core/",
-            "Routing/",
+            "models/",
             "controllers/",
             "views/"
         ]

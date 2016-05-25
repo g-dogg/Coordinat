@@ -7,14 +7,11 @@
  */
 
 /**
- * Description of testOut
+ * Description of Model
  *
  * @author g-dogg
  */
-class testOut 
+class Model 
 {
-    public function getClassName()
-    {
-        return "That ma class: ".__CLASS__;
-    }
+
 }

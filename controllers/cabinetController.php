@@ -1,11 +1,20 @@
 <?php
 
 class cabinetController extends Controller
-{
-	public function indexAction()
+{       
+        protected $config;
+        
+        function __construct(Config $config) 
+        {
+            parent::__construct();
+            $this->config = $config;
+            
+        }
+    
+    
+        public function indexAction()
 	{
-		$this->view->render('cabinetIndex');
-		//echo "fuck yo bitchezz bitch " . __CLASS__;
+		$this->view->render('cabinet', $this);
 	}
 
 	public function addProblemAction()

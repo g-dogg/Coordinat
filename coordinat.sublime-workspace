@@ -111,7 +111,7 @@
 			"file": "controllers/cabinetController.php",
 			"settings":
 			{
-				"buffer_size": 427,
+				"buffer_size": 592,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,7 +135,7 @@
 			"file": "controllers/indexController.php",
 			"settings":
 			{
-				"buffer_size": 129,
+				"buffer_size": 251,
 				"line_ending": "Unix"
 			}
 		},
@@ -353,15 +353,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 427,
+						"buffer_size": 592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								427,
-								427
+								0,
+								0
 							]
 						],
 						"settings":
@@ -631,15 +631,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 129,
+						"buffer_size": 251,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								122,
-								122
+								0,
+								0
 							]
 						],
 						"settings":
