@@ -5,8 +5,7 @@
  *
  * @author Ilyash
  */
-class Curl
-
+class curlCl
 {
     private $address;
     private $content;
