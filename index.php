@@ -12,7 +12,3 @@ if(file_exists('bootstrap.php'))
 		echo $e;
 	}
 }
-
-
-
-echo "<br><hr>";
