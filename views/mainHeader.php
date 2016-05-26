@@ -8,13 +8,13 @@
         <meta name="description" content="Настройка компьютеров, оборудования, программного обеспечения. Разработка сайтов. Аудит и проектирование сетей, инфраструктуры. Консультации. Администрирование.">
         <meta name="keywords" content="системное администрирование, СКС, программы, компьютеры, настройка">
         <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="libs/materialize/css/materialize.min.css">
-        <link rel="stylesheet" href="libs/animate/animate.min.css">
-        <link rel="stylesheet" href="libs/loaders/loaders.min.css">
-        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/media.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/animate/animate.min.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/loaders/loaders.min.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>css/fonts.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>css/main.css">
+        <link rel="stylesheet" href="<?= Config::getRootPath();?>css/media.css">
     </head>
     <body>
       <div class="loader">
@@ -23,7 +23,7 @@
           <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <header class="mainHead" id="home" data-parallax="scroll" data-image-src="img/bg.jpg">
+      <header class="mainHead" id="home" data-parallax="scroll" data-image-src="<?= Config::getRootPath();?>img/bg.jpg">
         <div class="contaner">
           <div class="row">
             <div class="col s12">

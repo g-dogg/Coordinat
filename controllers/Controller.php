@@ -3,12 +3,12 @@
 
 class Controller
 {
-	public $view;
+	protected $view;
 	public $model;
 
-	public function __construct()
+	public function __construct(View $view)
 	{
-		$this->view = new View;
+		$this->view = $view;
 	}
 
  	public function indexAction()

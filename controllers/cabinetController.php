@@ -1,20 +1,20 @@
 <?php
 
 class cabinetController extends Controller
-{       
+{
         protected $config;
-        
-        function __construct(Config $config) 
+/*
+        function __construct()
         {
             parent::__construct();
-            $this->config = $config;
-            
+            //$this->config = $config;
+
         }
-    
-    
+*/
+
         public function indexAction()
 	{
-		$this->view->render('cabinet', $this);
+		$this->view->render('cabinet');
 	}
 
 	public function addProblemAction()
