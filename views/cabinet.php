@@ -13,7 +13,7 @@
               </button>
             </div>
             <div class="col s12 m4 l6 avatar center-align">
-              <img src="<?= Config::getRootPath();?>img/usrImg/avatar.jpg">
+              <!--<img src="<?= Config::getRootPath();?>img/usrImg/avatar.jpg">-->
               <button class="btn waves-effect waves-ligh vt" type="submit" name="action">Загрузить
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
@@ -25,7 +25,7 @@
 		<button class="btn waves-effect waves-light yellow darken-1" type="submit" name="action">Загрузить
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
-              <button class="btn waves-effect waves-light yellow darken-1" type="submit" name="action">Сообщение
+              <button class="btn waves-effect waves-light yellow darken-1" type="button"  name="action">Сообщение
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
             </div>

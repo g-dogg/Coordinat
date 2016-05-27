@@ -12,6 +12,11 @@ $(document).ready(function() {
 		heightDetect();
 	});
 
+	$('.changePwd').bind('click', function(){
+		document.location.replace('changePassword');
+	});
+
+
 	$("#pfGrid").mixItUp();
 
 	$(".toggle_mnu").click(function() {

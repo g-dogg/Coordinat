@@ -12,7 +12,7 @@ class cabinetController extends Controller
         }
 */
 
-        public function indexAction()
+       public function indexAction()
 	{
 		$this->view->render('cabinet');
 	}
