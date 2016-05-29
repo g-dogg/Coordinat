@@ -12,7 +12,7 @@ $(document).ready(function() {
 		heightDetect();
 	});
 
-	$('.changePwd').bind('click', function(){
+	$('#changePwd').bind('click', function(){
 		document.location.replace('changePassword');
 	});
 

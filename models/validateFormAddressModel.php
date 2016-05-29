@@ -7,11 +7,11 @@
  */
 
 /**
- * Description of formCabinetUsrClass
+ * Description of validateFormAddressModel
  *
  * @author g-dogg
  */
-class formCabinetUsrClass
+class validateFormAddressModel extends Model
 {
     private $zipcode;
     private $town;
@@ -25,8 +25,8 @@ class formCabinetUsrClass
             'filter' => FILTER_VALIDATE_INT,
             'flags' => FILTER_REQUIRE_ARRAY,
             'options' => [
-                'min_range' => 644000,
-                'max_range' => 644999
+                'min_range' => 000000,
+                'max_range' => 999999
             ] 
         ],
         'town' => FILTER_SANITIZE_ENCODED,

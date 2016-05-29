@@ -31,7 +31,7 @@
                    <input  name="housing" id="icon_telephone" type="number" class="validate">
                   <label for="icon_telephone">Корпус</label>
                 </div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Загрузить
+                <button class="btn waves-effect waves-light" type="submit" id="saveAddress" name="saveAddress">Загрузить
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
               </div>

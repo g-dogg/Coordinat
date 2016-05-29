@@ -5,10 +5,10 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m4 l3 leftButton">
-              <button class="btn waves-effect waves-light yellow darken-1" type="submit" name="changePwd">Изменить пароль
+              <button class="btn waves-effect waves-light yellow darken-1" id ="changePwd" type="submit" name="changePwd">Изменить пароль
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
-              <button class="btn waves-effect waves-light yellow darken-1" type="submit" name="" >Загрузить
+              <button class="btn waves-effect waves-light yellow darken-1" id="editAddress" type="submit" name="editAddress">Редактировать адрес
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
             </div>

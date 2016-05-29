@@ -31,4 +31,16 @@ class cabinetController extends Controller
 	{
 		$this->view->render('editAddress');
 	}
+        
+        public function saveAddressAction()
+        {
+            if(!exist($_REQUEST['saveAddress']))
+            {
+                throw new Exception;
+            }
+            else
+            {
+                $this->model->setAddressArray();
+            }
+        }
 }

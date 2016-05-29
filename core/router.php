@@ -52,7 +52,8 @@ class Router
 			Router::ErrorPage404();
 		}
 		$view = new View;
-		$controller = new $controllerName($view);
+                $model = new Model;
+		$controller = new $controllerName($view, $model);
 		$action = $actionName;
 		if(method_exists($controller, $action))
 		{
