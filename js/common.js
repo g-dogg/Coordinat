@@ -15,7 +15,12 @@ $(document).ready(function() {
 	$('#changePwd').bind('click', function(){
 		document.location.replace('changePassword');
 	});
-
+	$('#addProblem').bind('click', function(){
+		document.location.replace('addProblem');
+	});
+	$('#editPersonal').bind('click', function(){
+		document.location.replace('editPersonal');
+	});
 
 	$("#pfGrid").mixItUp();
 

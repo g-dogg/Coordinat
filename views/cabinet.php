@@ -22,7 +22,7 @@
               </button>
             </div>
             <div class="col s12 m4 l3 rightButton">
-		<button class="btn waves-effect waves-light yellow darken-1" type="submit" name="action">Загрузить
+		<button class="btn waves-effect waves-light yellow darken-1" id="editPersonal" type="submit" name="editPersonal">Личные данные
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
               <button class="btn waves-effect waves-light yellow darken-1" type="button"  name="action">Сообщение
@@ -32,7 +32,7 @@
           </div>
           <div class="row">
           	<div class="col s12 setReq">
-          		<button class="btn-large waves-effect waves-light red" type="submit" name="setRequest">Сообщить о проблеме
+          		<button class="btn-large waves-effect waves-light red" type="submit" id="addProblem" name="addProblem">Сообщить о проблеме
                 		<i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               	</button>
           	</div>

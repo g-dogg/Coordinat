@@ -3,7 +3,10 @@
 class Router
 {
 	private $requestUrl;
-
+	/**
+	 * [start description]
+	 * @return [type] [description]
+	 */
 	static function start()
 	{
 		$controllerName  = 'index';
@@ -52,7 +55,7 @@ class Router
 			Router::ErrorPage404();
 		}
 		$view = new View;
-                $model = new Model;
+            $model = new $modelName;
 		$controller = new $controllerName($view, $model);
 		$action = $actionName;
 		if(method_exists($controller, $action))
@@ -67,7 +70,9 @@ class Router
 		/**/
 	}
 
-
+	/**
+	 * [ErrorPage404 description]
+	 */
 	static function ErrorPage404()
 	{
       	$host = 'http://'.$_SERVER['HTTP_HOST'].'/';

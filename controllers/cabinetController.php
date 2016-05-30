@@ -31,10 +31,15 @@ class cabinetController extends Controller
 	{
 		$this->view->render('editAddress');
 	}
-        
+
+        public function editPersonalAction()
+        {
+            $this->view->render('editPersonal');
+        }
+
         public function saveAddressAction()
         {
-            if(!exist($_REQUEST['saveAddress']))
+            if(!exist($_POST['saveAddress']))
             {
                 throw new Exception;
             }
