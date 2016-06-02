@@ -11,7 +11,7 @@
  *
  * @author g-dogg
  */
-class validateProblemFormModel extends Model
+class validateProblemFormClass
 {
 	private $arguments = [
 		'theme' => [

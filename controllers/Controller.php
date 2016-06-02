@@ -4,12 +4,12 @@
 class Controller
 {
 	protected $view;
-	public $model;
+	protected $model;
 
 	public function __construct(View $view, Model $model)
 	{
 		$this->view = $view;
-                $this->model = $model;
+            $this->model = $model;
 	}
 
  	public function indexAction()

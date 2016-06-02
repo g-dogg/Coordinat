@@ -2,50 +2,48 @@
 
 class cabinetController extends Controller
 {
-        protected $config;
-/*
-        function __construct()
+    protected $config;
+
+    public function indexAction()
+    {
+        $this->view->render('cabinet');
+    }
+
+    public function addProblemAction()
+    {
+       $this->view->render('addProblem');
+    }
+
+    public function passwordAction()
+    {
+        $this->view->render('password');
+    }
+
+    public function changePwdAction()
+    {
+        $this->model->changePassword()->validatePwd();
+
+    }
+
+    public function editAddressAction()
+    {
+        $this->view->render('editAddress');
+    }
+
+    public function editPersonalAction()
+    {
+        $this->view->render('editPersonal');
+    }
+
+    public function saveAddressAction()
+    {
+        if(!exist($_POST['saveAddress']))
         {
-            parent::__construct();
-            //$this->config = $config;
-
+            throw new Exception;
         }
-*/
-
-       public function indexAction()
-	{
-		$this->view->render('cabinet');
-	}
-
-	public function addProblemAction()
-	{
-		$this->view->render('addProblem');
-	}
-
-	public function changePasswordAction()
-	{
-		$this->view->render('changePassword');
-	}
-
-	public function editAddressAction()
-	{
-		$this->view->render('editAddress');
-	}
-
-        public function editPersonalAction()
+        else
         {
-            $this->view->render('editPersonal');
+            $this->model->setAddressArray();
         }
-
-        public function saveAddressAction()
-        {
-            if(!exist($_POST['saveAddress']))
-            {
-                throw new Exception;
-            }
-            else
-            {
-                $this->model->setAddressArray();
-            }
-        }
+    }
 }
