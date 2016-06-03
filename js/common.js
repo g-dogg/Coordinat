@@ -101,3 +101,14 @@ $(window).load(function() {
 	$(".mainHead .titleWrapper .sendRequest").animated("fadeIn", "pulse");
 
 });
+
+function changePwd(userID)
+{
+	console.log("js - changePwd()");
+	$.ajax({
+		type: 'POST',
+		async: false.
+		url: "/cabinet/changePwd",
+		dataType: 'json',
+	});
+}

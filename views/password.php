@@ -29,7 +29,7 @@
                   <label for="password">Еще раз новый пароль</label>
                   <p class="help-block"></p>
                 </div>
-                <button class="btn waves-effect waves-light" type="submit" name="save">Сохранить
+                <button class="btn waves-effect waves-light" type="submit" onClick="changePwd(<?= $userID; ?>); return false;" name="save">Сохранить
                 <i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i>
               </button>
               <button class="btn waves-effect waves-light" type="button" onclick="history.back(-1);" name="cancel">Отменить
