@@ -1,20 +1,31 @@
 <?php
 
-$dbConfig = [
-    'dsn'=>'mysql:host=localhost;dbname=coordinat',
-		'username'=>'root',
-		'password'=>'1234',
-		'charset'=>'utf8',
-	];
+class Db
+{
+  private $config;
 
-$opt = [
+  public function __construct(Config $config)
+  {
+    $this->config = $config;
+  }
+
+  private $dbConfig = [
+     'dsn'=>'mysql:host=localhost;dbname=coordinat',
+  		'username'=>'root',
+  		'password'=>'1234',
+  		'charset'=>'utf8',
+  	];
+
+  private $opt = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
   ];
 
+  public static function connect()
+  {
       try
       {
-        
+
         $db = new PDO($dbConfig['dsn'], $dbConfig['username'], $dbConfig['password'], $opt);
         //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $db->exec("SET CHARACTER_SET_CLIENT={$dbConfig['charset']}");
@@ -26,4 +37,5 @@ $opt = [
           //
         echo $e->getMessage();
       }
-       
+    }
+}
