@@ -9,14 +9,14 @@ class Db
     $this->config = $config;
   }
 
-  private $dbConfig = [
+  private static $dbConfig = [
      'dsn'=>'mysql:host=localhost;dbname=coordinat',
   		'username'=>'root',
   		'password'=>'1234',
   		'charset'=>'utf8',
   	];
 
-  private $opt = [
+  private static $opt = [
     PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
   ];
@@ -26,10 +26,10 @@ class Db
       try
       {
 
-        $db = new PDO($dbConfig['dsn'], $dbConfig['username'], $dbConfig['password'], $opt);
+        $db = new PDO(self::$dbConfig['dsn'], self::$dbConfig['username'], self::$dbConfig['password'], self::$opt);
         //$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $db->exec("SET CHARACTER_SET_CLIENT={$dbConfig['charset']}");
-        $db->exec("SET CHARACTER_SET_RESULTS={$dbConfig['charset']}");
+        $db->exec("SET CHARACTER_SET_CLIENT={self::$dbConfig['charset']}");
+        $db->exec("SET CHARACTER_SET_RESULTS={self::$dbConfig['charset']}");
         $db->exec("SET COLLATION_CONNECTION='utf8_general_ci'");
       }
       catch (PDOException $e)

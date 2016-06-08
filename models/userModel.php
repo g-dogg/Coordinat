@@ -3,7 +3,7 @@
 class userModel extends Model
 {
 	private $id;
-	private $userName;
+	private $user = [];
 	private $userId;
 	private $isAuthorized = false;
 	private $db;
@@ -24,19 +24,19 @@ class userModel extends Model
 		return FALSE;
 	}
 
-	public function getUserNameFromDb($userName)
+	public function getUserFromDb($userName)
 	{
-		$query = "SELECT username FROM users WHERE username = :username LIMIT 1";
-		$handler = $this->db->prepare($query);
+		$query = "SELECT * FROM users WHERE username = :username LIMIT 1";
+		$handler = $this->db->prepare($query, PDO_FETCH_ASSOC);
 		$handler->execute([
 				"username" => $userName,
  			]);
-		$this->userName = $handler->fetch();
-		if(!$this->userName)
+		$this->user = $handler->fetchAll();
+		if(!$this->user)
 		{
 			return FALSE;
 		}
-		return $this->userName;
+		return $this->user;
 
 	}
 
@@ -62,7 +62,7 @@ class userModel extends Model
 				"username" => $username,
 
 			]);
-		//TODO
+		if(password_verify($password, $this->)
 	}
 
 	public function logout()
