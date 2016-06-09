@@ -36,7 +36,7 @@ class userModel extends Model
 		{
 			return FALSE;
 		}
-		return $this->user;
+		return $this;
 
 	}
 
@@ -53,16 +53,21 @@ class userModel extends Model
 		return $passwordHashed;
 	}
 
-	public function authorize($username, $password, $rememberMe)
+	public function authorize($userName, $password, $rememberMe)
 	{
 
-		$query = "SELECT id, username FROM users WHERE username = :username LIMIT 1";
-		$handler = $this->db->prepare($query);
-		$handler->execute([
-				"username" => $username,
-
-			]);
-		if(password_verify($password, $this->)
+		$this->getUserFromDb($userName);
+		if(FALSE === password_verify($password, $this->user['hash']))
+		{
+			$this->isAuthorized = FALSE;
+		}
+		else
+		{
+			$this->isAuthorized = TRUE;
+			$this->user['id'];
+			$this->saveSession($rememberMe);
+		}
+		return $this->isAuthorized;
 	}
 
 	public function logout()
