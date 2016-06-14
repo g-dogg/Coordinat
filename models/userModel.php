@@ -97,7 +97,7 @@ class userModel extends Model
 	public function newUser($userName, $password)
 	{
 
-		if($this->getUserNameFromDb($userName))
+		if($this->getUserFromDb($userName))
 		{
 			throw new \Exception("User exist: " . $userName, 1);
 
@@ -125,8 +125,19 @@ class userModel extends Model
 				printf("Data error %d %s", $info[1], $info[2]);
 				die();
 			}
+		}
+	}
 
-
+	public function activateUser($userName)
+	{
+		$user = $this->getUserFromDb($userName)
+		if(!$user)
+		{
+			throw new Exception("Error Processing Request", 1);
+		}
+		else
+		{
+			echo md5($user->user['id']);
 		}
 	}
 
