@@ -130,7 +130,7 @@ class userModel extends Model
 
 	public function activateUser($userName)
 	{
-		$user = $this->getUserFromDb($userName)
+		$user = $this->getUserFromDb($userName);
 		if(!$user)
 		{
 			throw new Exception("Error Processing Request", 1);

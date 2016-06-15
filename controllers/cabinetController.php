@@ -4,6 +4,7 @@ class cabinetController extends Controller
 {
     protected $config;
 
+
     public function indexAction()
     {
         $this->view->render('cabinet');
@@ -12,6 +13,13 @@ class cabinetController extends Controller
     public function addProblemAction()
     {
        $this->view->render('addProblem');
+    }
+
+    public function sendProblem()
+    {
+            $ticket = new ticketModel;
+            $ticket->setNewProblem();
+
     }
 
     public function passwordAction()
