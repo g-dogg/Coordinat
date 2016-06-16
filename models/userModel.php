@@ -141,5 +141,19 @@ class userModel extends Model
 		}
 	}
 
+	public function changePwd()
+	{
+		if(FALSE === $this->isAuthorized)
+		{
+			throw new Exception("Error Processing Request", 1);
+		}
+		else
+		{
+			$pwdValidate = new validateFormPasswordClass;
+			$pwdValidate->validatePwd();
+
+		}
+	}
+
 
 }
