@@ -45,41 +45,19 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
+        
+        $(".logon").click(function(){
+			$(".logonForm").css("opacity", ".95");
+			$(".logonForm").fadeIn(800);
+
+		//$(".logonForm").removeClass("hidden");
+		//$("logonForm").animated("FadeInDown", "fadeOutUp");
+	});
 	//form validation
 	$(".newPassword, .confirmNewPassword").jqBootstrapValidation();
 	$(".oldPassword").jqBootstrapValidation();
 
-	function getData(formObject){
-		var hData = ();
-		$('input, textarea,select', formObject).each(function(){
-			if(this.name && this.name != ''){
-				hData[this.name] = this.value;
-				console.log('hData[' + this.name + ']=' + hData[this.name]);
-			}
-		});
-		return hData;
-	}
-
-	function registerNewUser(){
-		var postData = getData('#registerBox'){
-			$.ajax({
-				type: 'POST',
-				async: false,
-				url: "/user/registerUser/", //TODO: url до action регистрацииюзера
-				data: postData,
-				dataType: 'json',
-				success: function(data){
-					if(data['success']){
-						alert('Регистрация успешна'); //TODO: заменить на что-то более симпатичное
-						//Тут скрываем форму и показываем инфо о юзере
-					}
-					else{
-						alert(data['message']);
-					}
-				}
-			});
-		}
-	}
+	
 
 /*
 	$('#oldPassword').valid8('Введите старый пароль');
@@ -141,5 +119,36 @@ function changePwd(userID)
 		url: "/cabinet/changePwd",
 		dataType: 'json',
 	});
-}
+};
 
+function getData(formObject){
+		var hData = ();
+		$('input, textarea,select', formObject).each(function(){
+			if(this.name && this.name != ''){
+				hData[this.name] = this.value;
+				console.log('hData[' + this.name + ']=' + hData[this.name]);
+			}
+		});
+		return hData;
+	}
+
+	function registerNewUser(){
+		var postData = getData('#registerBox'){
+			$.ajax({
+				type: 'POST',
+				async: false,
+				url: "/user/registerUser/", //TODO: url до action регистрацииюзера
+				data: postData,
+				dataType: 'json',
+				success: function(data){
+					if(data['success']){
+						alert('Регистрация успешна'); //TODO: заменить на что-то более симпатичное
+						//Тут скрываем форму и показываем инфо о юзере
+					}
+					else{
+						alert(data['message']);
+					}
+				}
+			});
+		}
+	}
