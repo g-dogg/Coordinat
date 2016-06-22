@@ -9,10 +9,10 @@ class userModel extends Model
 	private $db;
 
 
-	public function __construct($userName = null, $password = null, Db $db)
+	public function __construct($userName = null, $password = null)
 	{
+		parent::__construct();
 		$this->userName = $userName;
-		$this->db = $db;
 	}
 
 	public static function isAuthorized()

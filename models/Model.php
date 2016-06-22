@@ -11,7 +11,12 @@
  *
  * @author g-dogg
  */
-class Model 
+class Model
 {
+	private $db;
 
+	public function __construct(Db $db)
+	{
+		$this->db = $db;
+	}
 }

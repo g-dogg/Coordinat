@@ -3,6 +3,7 @@
 class Router
 {
 	private $requestUrl;
+
 	/**
 	 * [start description]
 	 * @return [type] [description]
@@ -11,7 +12,9 @@ class Router
 	{
 		$controllerName  = 'index';
 		$actionName = 'index';
+		$conf = new Config;
 		$componentsArray = explode("/", $_SERVER['REQUEST_URI']);
+		$db = new Db($conf);
 
 
 		if(!empty($componentsArray[1]))
@@ -55,7 +58,7 @@ class Router
 			Router::ErrorPage404();
 		}
 		$view = new View;
-            $model = new $modelName;
+            $model = new $modelName($db);
 		$controller = new $controllerName($view, $model);
 		$action = $actionName;
 		if(method_exists($controller, $action))

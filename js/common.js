@@ -49,7 +49,37 @@ $(document).ready(function() {
 	$(".newPassword, .confirmNewPassword").jqBootstrapValidation();
 	$(".oldPassword").jqBootstrapValidation();
 
+	function getData(formObject){
+		var hData = ();
+		$('input, textarea,select', formObject).each(function(){
+			if(this.name && this.name != ''){
+				hData[this.name] = this.value;
+				console.log('hData[' + this.name + ']=' + hData[this.name]);
+			}
+		});
+		return hData;
+	}
 
+	function registerNewUser(){
+		var postData = getData('#registerBox'){
+			$.ajax({
+				type: 'POST',
+				async: false,
+				url: "", //TODO: url до action регистрацииюзера
+				data: postData,
+				dataType: 'json',
+				success: function(data){
+					if(data['success']){
+						alert('Регистрация успешна'); //TODO: заменить на что-то более симпатичное
+						//Тут скрываем форму и показываем инфо о юзере
+					}
+					else{
+						alert(data['message']);
+					}
+				}
+			});
+		}
+	}
 
 /*
 	$('#oldPassword').valid8('Введите старый пароль');
@@ -112,3 +142,4 @@ function changePwd(userID)
 		dataType: 'json',
 	});
 }
+
