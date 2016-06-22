@@ -65,7 +65,7 @@ $(document).ready(function() {
 			$.ajax({
 				type: 'POST',
 				async: false,
-				url: "", //TODO: url до action регистрацииюзера
+				url: "/user/registerUser/", //TODO: url до action регистрацииюзера
 				data: postData,
 				dataType: 'json',
 				success: function(data){

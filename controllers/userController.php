@@ -9,7 +9,6 @@ class userController extends Controller
 
 	public function registerUser()
 	{
-		$userModel = new userModel();
-
+		$this->model->newUser(); //передать json из формы
 	}
 }
