@@ -11,7 +11,48 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		heightDetect();
 	});
-
+        
+        function changePwd(userID) {
+	console.log("js - changePwd()");
+            $.ajax({
+		type: 'POST',
+		async: false,
+		url: '/cabinet/changePwd',
+		dataType: 'json',
+            });
+        };
+        
+        function getData(formObject) {
+		var hData = [];
+		$('input, textarea,select', formObject).each(function() {
+			if(this.name && this.name !== '') {
+				hData[this.name] = this.value;
+				console.log('hData[' + this.name + ']=' + hData[this.name]);
+			}
+		});
+		return hData;
+	}
+        
+        function registerNewUser() {
+		var postData = getData('#registerBox');
+		$.ajax({
+                    type: 'POST',
+                    async: false,
+                    url: "/user/registerUser/", //TODO: url до action регистрацииюзера
+                    data: postData,
+                    dataType: 'json',
+                    success: function(data) {
+			if(data['success']) {
+                            alert('Регистрация успешна'); //TODO: заменить на что-то более симпатичное
+                            //Тут скрываем форму и показываем инфо о юзере
+			}
+			else {
+                            alert(data['message']);
+			}
+                    }
+		});
+	}
+        
 	$('#changePwd').bind('click', function(){
 		document.location.replace('changePassword');
 	});
@@ -109,46 +150,3 @@ $(window).load(function() {
 	$(".mainHead .titleWrapper .sendRequest").animated("fadeIn", "pulse");
 
 });
-
-function changePwd(userID)
-{
-	console.log("js - changePwd()");
-	$.ajax({
-		type: 'POST',
-		async: false.
-		url: "/cabinet/changePwd",
-		dataType: 'json',
-	});
-};
-
-function getData(formObject){
-		var hData = ();
-		$('input, textarea,select', formObject).each(function(){
-			if(this.name && this.name != ''){
-				hData[this.name] = this.value;
-				console.log('hData[' + this.name + ']=' + hData[this.name]);
-			}
-		});
-		return hData;
-	}
-
-	function registerNewUser(){
-		var postData = getData('#registerBox'){
-			$.ajax({
-				type: 'POST',
-				async: false,
-				url: "/user/registerUser/", //TODO: url до action регистрацииюзера
-				data: postData,
-				dataType: 'json',
-				success: function(data){
-					if(data['success']){
-						alert('Регистрация успешна'); //TODO: заменить на что-то более симпатичное
-						//Тут скрываем форму и показываем инфо о юзере
-					}
-					else{
-						alert(data['message']);
-					}
-				}
-			});
-		}
-	}
