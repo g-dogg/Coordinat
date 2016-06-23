@@ -11,9 +11,9 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		heightDetect();
 	});
-        
-        function changePwd(userID) {
-	console.log("js - changePwd()");
+
+      function changePwd(userID) {
+		console.log("js - changePwd()");
             $.ajax({
 		type: 'POST',
 		async: false,
@@ -21,7 +21,7 @@ $(document).ready(function() {
 		dataType: 'json',
             });
         };
-        
+
         function getData(formObject) {
 		var hData = [];
 		$('input, textarea,select', formObject).each(function() {
@@ -32,7 +32,7 @@ $(document).ready(function() {
 		});
 		return hData;
 	}
-        
+
         function registerNewUser() {
 		var postData = getData('#registerBox');
 		$.ajax({
@@ -52,7 +52,7 @@ $(document).ready(function() {
                     }
 		});
 	}
-        
+
 	$('#changePwd').bind('click', function(){
 		document.location.replace('changePassword');
 	});
@@ -86,7 +86,7 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
-        
+
         $(".logon").click(function(){
 			$(".logonForm").css("opacity", ".95");
 			$(".logonForm").fadeIn(800);
@@ -98,7 +98,7 @@ $(document).ready(function() {
 	$(".newPassword, .confirmNewPassword").jqBootstrapValidation();
 	$(".oldPassword").jqBootstrapValidation();
 
-	
+
 
 /*
 	$('#oldPassword').valid8('Введите старый пароль');
