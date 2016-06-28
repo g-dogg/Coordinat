@@ -28,9 +28,9 @@ class Curl
             );
 
 
-    public function __construct($addr)
+    public function __construct($url, $addr)
     {
-        $this->address = "https://geocode-maps.yandex.ru/1.x/?format=json&geocode=" . $addr . "&results=1";
+        $this->address = $url . $addr . "&results=1";
     }
 
     public function getInfo()
