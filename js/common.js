@@ -18,7 +18,7 @@ $(document).ready(function() {
 		type: 'POST',
 		async: false,
 		url: '/cabinet/changePwd',
-		dataType: 'json',
+		dataType: 'json'
             });
         };
         
