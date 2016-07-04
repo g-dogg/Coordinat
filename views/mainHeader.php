@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/animate/animate.min.css">
         <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/loaders/loaders.min.css">
         <link rel="stylesheet" href="<?= Config::getRootPath();?>libs/font-awesome/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- testing -->
         <link rel="stylesheet" href="<?= Config::getRootPath();?>css/fonts.css">
         <link rel="stylesheet" href="<?= Config::getRootPath();?>css/main.css">
         <link rel="stylesheet" href="<?= Config::getRootPath();?>css/media.css">
