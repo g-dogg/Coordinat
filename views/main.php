@@ -3,7 +3,7 @@
             <div class="row">
               <div class="col s4">&nbsp;</div>
               <div class="col s4 form">
-                <form action="#" method="POST">
+                <form action="" method="POST"><!-- form-->
                   <div class="titleWrapper">
                     <h5>Вход</h5>
                   </div>
@@ -24,11 +24,11 @@
                    </p>
                   </div>
                   <div class="col s6 buttonLogon">
-                    <button class="btn waves-effect waves-light btn_clr2" type="submit" name="action">Отправить
+                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" onclick="registerNewUser();" value="send">Отправить
                     <i class="fa fa-share"></i>
                   </button>
                   </div>
-                </form>
+                </form><!--end form-->
               </div>
               <div class="col s4">&nbsp;</div>
             </div>
@@ -45,7 +45,7 @@
           </div>
           <div class="sendRequest">
             <a href="#sendrequest" class="waves-effect waves-orange btn-large inner-shiny btn_clr"><i class="mdi-action-exit-to-app right"></i>Регистрируйся</a>
-            <div><p>Уже зарегистрированы?</p><a href="#" class="logon">Вход</a></div>
+            <div><p>Уже зарегистрированы?</p><div class="logon" onClick="showLogon();">Вход</div>
           </div>
         </div>
       </header>
