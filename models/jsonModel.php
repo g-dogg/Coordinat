@@ -17,7 +17,7 @@ class jsonModel  extends Model
 	private $coords;
 	private $cuttedCoordinat = [];
 
-	public function setJson($json)
+	public function __construct($json)
 	{
 		$this->json = $json;
 	}
@@ -41,6 +41,11 @@ class jsonModel  extends Model
     	{
       	$this->cuttedCoordinat = explode(" ", $this->parseJsonForCoord());
       	return $this;
+    	}
+
+    	public function parseUserJson()
+    	{
+    		$jsonDecoded = json_decode($this->json);
     	}
 
 }
