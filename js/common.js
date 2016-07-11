@@ -21,7 +21,17 @@ $(document).ready(function() {
 		dataType: 'json'
             });
         };
+        
+         
+            $(".logon").click(function(){
+			$(".logonForm").css("opacity", ".95");
+			$(".logonForm").fadeIn(800);
 
+		//$(".logonForm").removeClass("hidden");
+		//$("logonForm").animated("FadeInDown", "fadeOutUp");
+            });
+        
+        
         function getData(formObject) {
 		var hData = [];
 		$('input, textarea,select', formObject).each(function() {

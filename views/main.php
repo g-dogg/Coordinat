@@ -45,7 +45,7 @@
           </div>
           <div class="sendRequest">
             <a href="#sendrequest" class="waves-effect waves-orange btn-large inner-shiny btn_clr"><i class="mdi-action-exit-to-app right"></i>Регистрируйся</a>
-            <div><p>Уже зарегистрированы?</p><div class="logon" onClick="showLogon();">Вход</div>
+            <div><p>Уже зарегистрированы?</p><div class="logon" >Вход</div>
           </div>
         </div>
       </header>
