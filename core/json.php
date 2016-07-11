@@ -4,7 +4,7 @@
  *
  * @author g-dogg
  */
-class json
+class Json
 {
 
     public $jsonString;
@@ -32,7 +32,10 @@ class json
       $this->crdArr = $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
       return $this;
     }
-
+    /**
+     * [cuttingCoord description]
+     * @return $this возвращает объект класса
+     */
     public function cuttingCoord()
     {
       $coords = explode(" ", $this->crdArr);

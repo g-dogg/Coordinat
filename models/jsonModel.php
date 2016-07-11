@@ -13,7 +13,34 @@
  */
 class jsonModel  extends Model
 {
-    private $json;
-    
-    
+	private $json;
+	private $coords;
+	private $cuttedCoordinat = [];
+
+	public function setJson($json)
+	{
+		$this->json = $json;
+	}
+
+	public function getjson()
+	{
+		return $this->json;
+	}
+	/**
+	 * [parseJsonForCoord description]
+	 * @return object возвращает экземпляр класса jsonModel
+	 */
+	public function parseJsonForCoord()
+	{
+		$jsonDecoded = json_decode($this->json);
+      	$this->coords = $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
+      	return $this->coords;
+	}
+
+	public function cuttingCoord()
+    	{
+      	$this->cuttedCoordinat = explode(" ", $this->parseJsonForCoord());
+      	return $this;
+    	}
+
 }
