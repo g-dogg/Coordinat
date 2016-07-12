@@ -21,7 +21,17 @@ $(document).ready(function() {
 		dataType: 'json'
             });
         };
+        
+         
+            $(".logon").click(function(){
+			$(".logonForm").css("opacity", ".95");
+			$(".logonForm").fadeIn(800);
 
+		//$(".logonForm").removeClass("hidden");
+		//$("logonForm").animated("FadeInDown", "fadeOutUp");
+            });
+        
+        
         function getData(formObject) {
 		var hData = [];
 		$('input, textarea,select', formObject).each(function() {
@@ -53,13 +63,13 @@ $(document).ready(function() {
 		});
 	}
 
-	$('#changePwd').bind('click', function(){
+	$('#changePwd').bind('click', function() {
 		document.location.replace('changePassword');
 	});
-	$('#addProblem').bind('click', function(){
+	$('#addProblem').bind('click', function() {
 		document.location.replace('addProblem');
 	});
-	$('#editPersonal').bind('click', function(){
+	$('#editPersonal').bind('click', function() {
 		document.location.replace('editPersonal');
 	});
 
@@ -86,14 +96,16 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
-
-        $(".logon").click(function(){
+        
+        function showLogon() {
+            $(".logon").click(function(){
 			$(".logonForm").css("opacity", ".95");
 			$(".logonForm").fadeIn(800);
 
 		//$(".logonForm").removeClass("hidden");
 		//$("logonForm").animated("FadeInDown", "fadeOutUp");
-	});
+            });
+        }
 	//form validation
 	$(".newPassword, .confirmNewPassword").jqBootstrapValidation();
 	$(".oldPassword").jqBootstrapValidation();

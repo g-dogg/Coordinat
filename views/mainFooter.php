@@ -19,7 +19,7 @@
             </div>
           </div>
         </div>
-      </footer>
+</footer>
       <div class="hidden">
             <!--[if lt IE 9]>
                 <script src="<?= Config::getRootPath();?>libs/html5shiv/es5-shim.min.js"></script>
