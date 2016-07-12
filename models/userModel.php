@@ -6,15 +6,15 @@ class userModel extends Model
 	private $user = [];
 	private $userId;
 	private $isAuthorized = false;
-	private $db;
+	//private $db;
 
-
-	public function __construct($userName = null, $password = null)
+/*
+	public function __construct(Db $db)
 	{
-		parent::__construct();
-		$this->userName = $userName;
+		parent::__construct(Db $db);
+		//$this->userName = $userName;
 	}
-
+*/
 	public static function isAuthorized()
 	{
 		if(!empty($_SESSION["userId"]))
