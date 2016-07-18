@@ -8,13 +8,13 @@ class userModel extends Model
 	private $isAuthorized = false;
 	//private $db;
 
-/*
+
 	public function __construct(Db $db)
 	{
-		parent::__construct(Db $db);
+		parent::__construct( $db);
 		//$this->userName = $userName;
 	}
-*/
+
 	public static function isAuthorized()
 	{
 		if(!empty($_SESSION["userId"]))

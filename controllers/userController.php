@@ -7,10 +7,21 @@ class userController extends Controller
 		$this->view->render('userIndex');
 	}
 
-	public function registerUserAction($username, $password)
+	public function registerUserAction()
 	{
-		//$this->model->newUser($username, $password); //передать json из формы
-            echo $post = $_POST;
-            
+		/*$this->model->newUser($username, $password); //передать json из формы
+            var_dump($_POST);
+            return $data['success'];
+            */
+           	try
+           	{
+           		$fh = fopen('log.txt', 'w');
+           	}
+            catch (Exception $e)
+            {
+            	echo $e;
+            }
+            fputs($fh, $_POST['username']);
+            fclose($fh);
 	}
 }
