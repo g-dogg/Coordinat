@@ -21,8 +21,8 @@ $(document).ready(function() {
 		dataType: 'json'
             });
         };
-        
-         
+
+
             $(".logon").click(function(){
 			$(".logonForm").css("opacity", ".95");
 			$(".logonForm").fadeIn(800);
@@ -30,8 +30,8 @@ $(document).ready(function() {
 		//$(".logonForm").removeClass("hidden");
 		//$("logonForm").animated("FadeInDown", "fadeOutUp");
             });
-        
-        
+
+
         function getData(formObject) {
 		var hData = [];
 		$('input, textarea,select', formObject).each(function() {
@@ -43,22 +43,27 @@ $(document).ready(function() {
 		return hData;
 	}
 
-        function registerNewUser() {
-		var postData = getData('#registerBox');
+        function logonUser() {
+		//var postData = getData('#registerBox');
+		var login = $('#username').val();
+		var pwd = $('#password').val();
+		var postData = "username="+login+"&password="+pwd;
+
+
 		$.ajax({
                     type: 'POST',
                     async: false,
-                    url: "/user/registerUser/", //TODO: url до action регистрацииюзера
+                    url: "/user/logonUser/", //TODO: url до action регистрацииюзера
                     data: postData,
                     dataType: 'json',
                     success: function(data) {
-			if(data['success']) {
+				if(data['success']) {
                             alert('Регистрация успешна'); //TODO: заменить на что-то более симпатичное
                             //Тут скрываем форму и показываем инфо о юзере
-			}
-			else {
+				}
+				else {
                             alert(data['message']);
-			}
+				}
                     }
 		});
 	}
@@ -96,7 +101,7 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
-        
+
         function showLogon() {
             $(".logon").click(function(){
 			$(".logonForm").css("opacity", ".95");

@@ -7,21 +7,27 @@ class userController extends Controller
 		$this->view->render('userIndex');
 	}
 
-	public function registerUserAction()
+	public function logonUserAction()
 	{
 		/*$this->model->newUser($username, $password); //передать json из формы
             var_dump($_POST);
             return $data['success'];
             */
+
+           $peremTest1 = isset($_REQUEST['username']) ? $_REQUEST['username'] : 'ниx не пашет';
+
            	try
            	{
-           		$fh = fopen('log.txt', 'w');
+           		$fh = fopen('log.txt', 'a+');
            	}
             catch (Exception $e)
             {
             	echo $e;
             }
-            fputs($fh, $_POST['username']);
+            fputs($fh, $peremTest1);
             fclose($fh);
+
+            echo json_encode($peremTest1);
+            var_dump($_REQUEST);
 	}
 }

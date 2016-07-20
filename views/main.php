@@ -9,12 +9,12 @@
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">account_circle</i>
-                    <input name="username" id="username" type="text" class="validate">
+                    <input name="username" id="username" type="text" class="validate" value="">
                     <label for="username">Введите логин</label>
                   </div>
                   <div class="input-field col s12">
                     <i class="material-icons prefix">vpn_key</i>
-                    <input name="password" id="password" type="password" class="validate">
+                    <input name="password" id="password" type="password" class="validate" value="">
                       <label for="password">Пароль.</label>
                   </div>
                   <div class="col s6">
@@ -24,7 +24,7 @@
                    </p>
                   </div>
                   <div class="col s6 buttonLogon">
-                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" onclick="registerNewUser();" value="send">Отправить
+                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" onclick="logonUser();" value="send">Отправить
                     <i class="fa fa-share"></i>
                   </button>
                   </div>
