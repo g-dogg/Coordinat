@@ -52,7 +52,8 @@ $(document).ready(function() {
 
 		$.ajax({
                     type: 'POST',
-                    async: false,
+                    cache: false,
+                    //async: false,
                     url: "/user/logonUser/", //TODO: url до action регистрацииюзера
                     data: postData,
                     dataType: 'json',

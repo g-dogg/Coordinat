@@ -24,7 +24,7 @@
                    </p>
                   </div>
                   <div class="col s6 buttonLogon">
-                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" onclick="logonUser();" value="send">Отправить
+                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" onclick="logonUser();">Отправить
                     <i class="fa fa-share"></i>
                   </button>
                   </div>
