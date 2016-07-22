@@ -7,7 +7,7 @@ class userController extends Controller
 		$this->view->render('userIndex');
 	}
 
-	public function logonUserAction()
+	public function logonAction()
 	{
 		/*$this->model->newUser($username, $password); //передать json из формы
             var_dump($_POST);
