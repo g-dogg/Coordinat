@@ -9,7 +9,7 @@ class userController extends Controller
 
 	public function logonAction()
 	{
-		/*$this->model->newUser($username, $password); //передать json из формы
+		/*$this->model->logonUser($username, $password); //передать json из формы
             var_dump($_POST);
             return $data['success'];
             */

@@ -19,12 +19,12 @@
                   </div>
                   <div class="col s6">
                   <p>
-                    <input type="checkbox" id="rememberMe" />
+                    <input type="checkbox" id="rememberMe" name="rememberMe" value="true">
                     <label for="rememberMe">Запомнить</label>
                    </p>
                   </div>
                   <div class="col s6 buttonLogon">
-                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" onclick="logonUser();">Отправить
+                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" value="true" onclick="logonUser();">Отправить
                     <i class="fa fa-share"></i>
                   </button>
                   </div>
