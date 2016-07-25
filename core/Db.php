@@ -7,12 +7,12 @@ class Db
  * еще не понятно, надо ли
  * @param Config $config [description]
  */
-
+/*
   public function __construct(Config $config)
   {
     $this->config = $config;
   }
-
+*/
   private static $dbConfig = [
      'dsn'=>'mysql:host=localhost;dbname=coordinat',
   		'username'=>'root',

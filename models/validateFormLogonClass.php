@@ -1,23 +1,27 @@
 <?php
 
-class validateFormLogonModel extends Model
+class validateFormLogonModel
 {
 	protected $validatedLogonData = [];
-	private static $optArray = [
+	private $optArray = [
 		'username' => [
-			'filter' => FILTER_SANITIZE_ENCODE,
+			'filter' => FILTER_SANITIZE_ENCODED
 		],
 		'password'=>[
-			'filter'=>FILTER_VALIDATE_REGEXP,
-			'options'=>[
-				'regexp'=>'',
-			],
+			'filter'=>FILTER_SANITIZE_ENCODED
+
 		],
 	];
 
 	public function validateLogon()
 	{
-		$this->validatedLogonData = filter_input_array(INPUT_POST, self::optArray);
+		$this->validatedLogonData = filter_input_array(INPUT_GET, $this->optArray);
 		return $this;
 	}
+
+	public function getValidatedData()
+	{
+		return $this->validatedLogonData;
+	}
+
 }

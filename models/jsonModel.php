@@ -14,12 +14,14 @@
 class jsonModel  extends Model
 {
 	private $json;
+	private $data;
 	private $coords;
 	private $cuttedCoordinat = [];
 
-	public function __construct($json)
+	public function __construct($json = NULL, $data = NULL)
 	{
 		$this->json = $json;
+		$this->data = $data;
 	}
 
 	public function getjson()
@@ -48,4 +50,10 @@ class jsonModel  extends Model
     		$jsonDecoded = json_decode($this->json);
     	}
 
+
+    	public function encodeUserJson()
+    	{
+    		$this->json = json_encode($this->data);
+    		return $this->json;
+    	}
 }
