@@ -50,7 +50,6 @@ class jsonModel  extends Model
     		$jsonDecoded = json_decode($this->json);
     	}
 
-
     	public function encodeUserJson()
     	{
     		$this->json = json_encode($this->data);

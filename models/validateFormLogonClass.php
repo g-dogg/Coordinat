@@ -8,9 +8,11 @@ class validateFormLogonModel
 			'filter' => FILTER_SANITIZE_ENCODED
 		],
 		'password'=>[
-			'filter'=>FILTER_SANITIZE_ENCODED
-
-		],
+			'filter'=>FILTER_VALIDATE_REGEXP,
+			'option' => [
+				"regexp" => "a-zA-Z0-9_-#@$%^&*()[]{}"
+			]
+		]
 	];
 
 	public function validateLogon()
