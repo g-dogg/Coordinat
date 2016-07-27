@@ -42,4 +42,11 @@ class addressModel extends Model
     }
 
     //TODO: функция вставки долготы и широты в базу в поля запрошенного адреса "...where address id = $this->fullAddress['id']". как-то так
+    public function updateCoordInDB()
+    {
+        $query = "UPDATE address SET  latitude = :lat, longtitude = :long WHERE id = :id";
+        $handler = $this->db->prepare($query);
+        $handler->execute(['lat'=>, 'long'=>, 'id'=>$this->fullAddress['id']])
+        //to be continued...
+    }
 }
