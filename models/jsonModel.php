@@ -42,7 +42,11 @@ class jsonModel  extends Model
 	public function cuttingCoord()
     	{
       	$this->cuttedCoordinat = explode(" ", $this->parseJsonForCoord());
-      	return $this;
+    	}
+
+    	public function getCuttedCoords()
+    	{
+    		return $this->cuttedCoordinat;
     	}
 
     	public function parseUserJson()

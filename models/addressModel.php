@@ -5,6 +5,7 @@ class addressModel extends Model
 	//TODO: свойства по полям таблицы, методы получения и установки . метод проверки и запроса координат. добавление новых записей
     private $fullAddress = [];
     private $serviceUrl = 'https://geocode-maps.yandex.ru/1.x/?format=json&geocode=';
+    private $newCoords = [];
 
 
     public function setNewFullAddress()
@@ -31,5 +32,14 @@ class addressModel extends Model
     public function requestNewCoords()
     {
         $curl = new Curl($this->serviceUrl, $this->getAddressToRequest());
+        $json = new jsonModel($curl->getContent()->getInfo(), NULL);
+        $this->newCoords = $json->cuttingCoord()->getCuttedCoords();
     }
+
+    public function getNewCoords()
+    {
+        return $this->newCoords;
+    }
+
+    //TODO: функция вставки долготы и широты в базу в поля запрошенного адреса "...where address id = $this->fullAddress['id']". как-то так
 }

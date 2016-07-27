@@ -10,14 +10,14 @@ class validateFormLogonModel
 		'password'=>[
 			'filter'=>FILTER_VALIDATE_REGEXP,
 			'option' => [
-				"regexp" => "a-zA-Z0-9_-#@$%^&*()[]{}"
+				'regexp' => "/^[a-zA-Z0-9_-]{8,16}$/"
 			]
 		]
 	];
 
 	public function validateLogon()
 	{
-		$this->validatedLogonData = filter_input_array(INPUT_GET, $this->optArray);
+		$this->validatedLogonData = filter_input_array(INPUT_POST, $this->optArray);
 		return $this;
 	}
 
