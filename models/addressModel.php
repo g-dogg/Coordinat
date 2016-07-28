@@ -46,7 +46,7 @@ class addressModel extends Model
     {
         $query = "UPDATE address SET  latitude = :lat, longtitude = :long WHERE id = :id";
         $handler = $this->db->prepare($query);
-        $handler->execute(['lat'=>, 'long'=>, 'id'=>$this->fullAddress['id']])
+        $handler->execute(['long'=>$this->newCoords['longtitude'], 'lat'=>$this->newCoords['latitude'], 'id'=>$this->fullAddress['id']]);
         //to be continued...
     }
 }

@@ -38,7 +38,11 @@ class jsonModel  extends Model
       	$this->coords = $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
       	return $this->coords;
 	}
-
+	/**
+	 * долгота - широта
+	 * longtitude - latitude
+	 * @return [type] [description]
+	 */
 	public function cuttingCoord()
     	{
       	$this->cuttedCoordinat = explode(" ", $this->parseJsonForCoord());
