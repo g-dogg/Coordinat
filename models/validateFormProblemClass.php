@@ -11,8 +11,9 @@
  *
  * @author g-dogg
  */
-class validateProblemFormClass
+class validateFormProblemModel
 {
+	private $validatedProblem = [];
 	private $arguments = [
 		'theme' => [
 			'filter' => FILTER_SANITIZE_ENCODED,
@@ -25,9 +26,14 @@ class validateProblemFormClass
 		]
 	];
 
-	public function validateForm() //сюда скорее всего передать объект типа Controller
+	public function validateForm()
 	{
-		return filter_input_array(INPUT_POST, $this->arguments);
+		$this->validatedProblem = filter_input_array(INPUT_POST, $this->arguments);
+	}
+
+	public function getValidatedProblem()
+	{
+		return $this->validatedProblem;
 	}
 
 
