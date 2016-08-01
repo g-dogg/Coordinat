@@ -29,14 +29,14 @@
             <![endif]-->
             <script src="<?= Config::getRootPath();?>libs/jquery/jquery-2.1.3.min.js"></script>
             <script src="<?= Config::getRootPath();?>libs/materialize/js/materialize.min.js"></script>
+            
             <script src="<?= Config::getRootPath();?>libs/magnific-popup/jquery.magnific-popup.min.js"></script>
             <script src="<?= Config::getRootPath();?>libs/loaders/loaders.css.js"></script>
             <script src="<?= Config::getRootPath();?>libs/mixitup/mixitup.min.js"></script>
-            <script src="<?= Config::getRootPath();?>libs/scroll2id/PageScroll2id.min.js"></script>
+            
             <script src="<?= Config::getRootPath();?>libs/waypoints/waypoints.min.js"></script>
             <script src="<?= Config::getRootPath();?>libs/animate/animate-css.js"></script>
             <script src="<?= Config::getRootPath();?>libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
-
             <script src="<?= Config::getRootPath();?>js/common.js"></script>
       </div>
     </body>
