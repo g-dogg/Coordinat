@@ -6,11 +6,18 @@ $(document).ready(function() {
 		$(".mainHead").css("height", $(window).height() * $percentage );
 		$(".about").css("height", $(window).height() * $percentage );
 		$(".contacts").css("height", $(window).height() * $percentage );
+		$(".mainMap").css("height", $(window).height() * $percentage );
 	};
 	heightDetect(1);
 	$(window).resize(function() {
 		heightDetect();
 	});
+
+	/*
+	*   map
+	 */
+
+
 
       function changePwd(userID) {
 		console.log("js - changePwd()");

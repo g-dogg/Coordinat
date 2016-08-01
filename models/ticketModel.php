@@ -17,15 +17,17 @@ class ticketModel extends Model
     private $description;
     private $ticketHolder;
     private $ticketHelper;
-    private $status;
+    private $status = 0;
     private $ticket;
+    private $formValidator;
 
     public function __construct(\Db $db)
     {
         parent::__construct($db);
+        $this->formValidator = new validateFormProblemModel;
     }
 
-    public function getThemeTicket($theme)
+    public function getTicket($theme)
     {
         $query = "SELECT theme FROM tickets WHERE theme = :theme";
         $handler = $this->db->prepare($query);
@@ -35,7 +37,7 @@ class ticketModel extends Model
 
     public function newTicket()
     {
-        $formValidator = new validateFormProblemModel;
+        ;
         $validateTicket = $formValidator->getValidatedProblem()->validateForm();
 
         $query = "INSERT INTO "; //TODO доделать запрос в соответствии с табл
@@ -43,8 +45,22 @@ class ticketModel extends Model
         $handler->execute([]);
     }
 
-    public function setTicketStatus()
+    public function updateTicketStatus()
     {
+        switch ($this) {
+            case 'value':
+                # code...
+                break;
+
+            default:
+                # code...
+                break;
+        }
+    }
+
+    public function updateTicketStatus()
+    {
+        $query = "UPDATE problems SET status = :status";
 
     }
 }
