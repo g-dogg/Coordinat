@@ -268,12 +268,14 @@ figure.effect-sarah:hover a::after {
 .mainMap {
   background-color: rgba(0, 0, 0, 0.01) !important;
   display: block;
-  width: 650px;
-  min-height: 600px;
+  width: 100%;
+  min-height: 800px;
   z-index: 100; }
   .mainMap .map {
-    width: 600px;
-    height: 600px;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 800px;
     position: relative; }
 
 .about, .watchword {
