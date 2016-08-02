@@ -142,9 +142,9 @@ $(window).load(function() {
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ2RvZ2ciLCJhIjoiY2lyYm90d3M5MDA0eWk5bWdpNGRtdWUxaiJ9.uAw0b_sIuY7F9slr4VN_dQ';
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', //stylesheet location
-    center: [74.20, 62.33], // starting position
-    zoom: 9 // starting zoom
+    style: 'mapbox://styles/mapbox/outdoors-v9', //stylesheet location
+    center: [73.36, 54.99], // starting position
+    zoom: 15 // starting zoom
 });
 
         function getData(formObject) {
