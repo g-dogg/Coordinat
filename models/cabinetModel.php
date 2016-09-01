@@ -11,8 +11,10 @@ class cabinetModel extends Model
 
 	public function __construct()
 	{
-		$this->validatePwd = new validateFormPasswordClass;
+
 	}
+
+
 
 
 }

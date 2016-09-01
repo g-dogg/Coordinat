@@ -87,38 +87,6 @@ $(document).ready(function() {
 	$(".newPassword, .confirmNewPassword").jqBootstrapValidation();
 	$(".oldPassword").jqBootstrapValidation();
 
-
-
-/*
-	$('#oldPassword').valid8('Введите старый пароль');
-	function doesPasswordFieldsMatch(values){
-    		if(values.password == values.verification) {
-    			return {valid:true};
-        			//$(".fa fa-check-square").removeClass("hidden");
-    		}
-    		else {
-    			return {valid:false, message:'Passwords does not match'}
-    		}
-
-		}
-
-	$('#inputPassword').valid8('Password is required');
-	$('#inputConfirmPassword').valid8({
-    	'jsFunctions': [
-        		{ function: doesPasswordFieldsMatch, values: function(){
-                		return { password: $('#inputPassword').val(), verification: $('#inputConfirmPassword').val() }
-            		}
-        		}
-    	]
-	});
-	 $('#inputPassword').valid8({
-        		'regularExpressions': [
-            		{ expression: /^[a-z0-9_-]{8,18}$/, errormessage: 'You can only use the letters A-Z and numbers'}
-        		]
-    	});
-*/
-
-
     $(".titleWrapper .logo").animated("fadeInDown", "bounceOut");
 	$(".titleWrapper h3").animated("fadeInDown", "fadeOutUp");
 	$(".about .abImg1").animated("flipInX", "flipOutX");
@@ -139,12 +107,13 @@ $(window).load(function() {
 	$(".mainHead .titleWrapper .sendRequest").animated("fadeIn", "pulse");
 
 });
-mapboxgl.accessToken = 'pk.eyJ1IjoiZ2RvZ2ciLCJhIjoiY2lyYm90d3M5MDA0eWk5bWdpNGRtdWUxaiJ9.uAw0b_sIuY7F9slr4VN_dQ';
-var map = new mapboxgl.Map({
+
+L.mapbox.accessToken = 'pk.eyJ1IjoiZ2RvZ2ciLCJhIjoiY2lyYm90d3M5MDA0eWk5bWdpNGRtdWUxaiJ9.uAw0b_sIuY7F9slr4VN_dQ';
+var map = L.mapbox.map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/outdoors-v9', //stylesheet location
     center: [73.36, 54.51], // starting position
-    zoom: 15 // starting zoom
+    zoom: 9 // starting zoom
 });
 
         function getData(formObject) {
