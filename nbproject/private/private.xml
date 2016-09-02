@@ -3,16 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/controllers/userController.php</file>
             <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/views/mainHeader.php</file>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/models/indexModel.php</file>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/models/addressModel.php</file>
+            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/views/mapIndex.php</file>
+            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/views/mapHeader.php</file>
+            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/views/mapFooter.php</file>
             <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/views/mainFooter.php</file>
             <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/js/common.js</file>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/models/userModel.php</file>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/views/main.php</file>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/models/jsonModel.php</file>
-            <file>file:/media/g-dogg/DATA/Web_Projects/Coordinat/models/curlClass.php</file>
         </group>
     </open-files>
 </project-private>
