@@ -32,6 +32,9 @@ html
   background: $htmlColor
   color: $fontColor
 
+.parallax-container
+  height: 480px
+
 .mainHead
   display: block
   background: rgba(0,0,0, 0.7)
@@ -204,7 +207,6 @@ figure.effect-sarah a::after
   -webkit-transform: translate3d(-100%,0,0)
   transform: translate3d(-100%,0,0)
 
-
 figure.effect-sarah:hover a::after
   -webkit-transform: translate3d(0,0,0)
   transform: translate3d(0,0,0)
@@ -233,9 +235,11 @@ figure.effect-sarah:hover a::after
   position: relative
   min-height: 480px
   .titleWrapper
+    position: absolute
     margin-top: 10px
     padding: 50px
     vertical-align: middle
+    z-index: 199
     +transition(all 1s ease)
     .logo
       position: relative

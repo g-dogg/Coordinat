@@ -15,7 +15,7 @@
               <a href="#sendrequest">Регистрация</a>
             </div>
             <div class="col s3">
-              <div class="copyright"><p>Все права защищены. &copy; "Найти IT 2015"</p></div>
+              <div class="footer-copyright"><p>Все права защищены. &copy; "Найти IT 2015"</p></div>
             </div>
           </div>
         </div>

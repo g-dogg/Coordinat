@@ -24,7 +24,25 @@
           <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <header class="mainHead" id="home" data-parallax="scroll" data-image-src="<?= Config::getRootPath();?>img/bg.jpg">
+      <header class="mainHead" id="home" ><!--data-parallax="scroll" data-image-src="<?= Config::getRootPath();?>img/bg.jpg">-->
+      <div class="parallax-container">
+        <div class="parallax"><img src="<?= Config::getRootPath();?>img/bg.jpg"></div>
+      </div>
+      <div class="titleWrapper">
+        <div class="logo">
+          <p>НАйти IT</p>
+        </div>
+        <div class="mainDescr">
+          <p>Рядом всегда найдется тот, кто поможет!..</p>
+        </div>
+        <div class="sendRequest">
+          <a href="#sendrequest" class="waves-effect waves-orange btn-large inner-shiny btn_clr"><i clamdi-action-exit-to-app right"></i>Регистрируйся</a>
+          <div><p>Уже зарегистрированы?</p></div>
+          <div class="logon" >Вход</div>
+        </div>
+      </div>
+
+
         <div class="contaner">
           <div class="row">
             <div class="col s12">
@@ -62,5 +80,3 @@
               </nav>
             </div>
           </div>
-        </div>
-       </header>

@@ -6,6 +6,9 @@ html {
   background: #E9E6C9;
   color: #393E51; }
 
+.parallax-container {
+  height: 480px; }
+
 .mainHead {
   display: block;
   background: rgba(0, 0, 0, 0.7); }
@@ -216,9 +219,11 @@ figure.effect-sarah:hover a::after {
   position: relative;
   min-height: 480px; }
   .mainHead .titleWrapper {
+    position: absolute;
     margin-top: 10px;
     padding: 50px;
     vertical-align: middle;
+    z-index: 199;
     transition: all 1s ease 0.3s ease-out;
     -webkit-transition: all 1s ease 0.3s ease-out;
     -moz-transition: all 1s ease 0.3s ease-out;
