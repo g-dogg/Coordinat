@@ -126,12 +126,32 @@ $(window).load(function() {
 		return hData;
 	};
 
+	function registerUser() {
+		var postData = getData('#registerUser');
+
+		$.ajax({
+			type: 'POST',
+			cache: false,
+			async: false,
+			url: "/user/registerUser/",
+			data: postData,
+			dataType: 'json',
+			success: function(data){
+				if(data['success']){
+					alert('Успех');
+				}
+				else {
+					alert('Не Успех');
+				}
+			}
+		});
+	}
+
         function logonUser() {
 		//var postData = getData('#registerBox');
 		var login = $('#username').val();
 		var pwd = $('#password').val();
 		var postData = "username="+login+"&password="+pwd;
-
 
 		$.ajax({
                     type: 'POST',

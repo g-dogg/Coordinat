@@ -89,7 +89,7 @@
         <div class="container">
           <div class="row">
             <h5>Остальную информацию нужно указать в личном кабинете</h5>
-            <form action="" class="col s12" novalidate target="_blank" method="post">
+            <form action="" class="col s12" id="registerUser" novalidate target="_blank" method="post">
             <div class="input-field col s6">
               <input name="username" id="username" type="text" class="validate">
               <label for="username">Введите логин</label>
@@ -102,9 +102,9 @@
               <input name="password" id="password" type="password" class="validate">
               <label for="password">Пароль. Минимум 8 символовю</label>
             </div>
-            <button class="btn waves-effect waves-light btn_clr2" type="submit" name="action">Отправить
-              <i class="fa fa-share"></i>
-            </button>
+            <div class="col s6 buttonLogon">
+                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="registerUser" value="true" onclick="registerUser();">Зарегистрироваться
+                    <i class="fa fa-share"></i>
           </div>
         </div>
       </section>

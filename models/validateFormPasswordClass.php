@@ -2,7 +2,7 @@
 
 class validateFormPasswordClass
 {
-	protected $validatedPwd = [];
+	protected $validatedPwd;
 	private static $optArray = [
 		'oldPassword'=>[
 			'filter'=>FILTER_VALIDATE_REGEXP,
@@ -27,7 +27,6 @@ class validateFormPasswordClass
 	public function validatePwd()
 	{
 		$this->validatedPwd = filter_input_array(INPUT_POST, self::optArray);
-		return $this;
 	}
 
 

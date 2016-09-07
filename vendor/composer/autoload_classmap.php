@@ -20,6 +20,7 @@ return array(
     'indexModel' => $baseDir . '/models/indexModel.php',
     'jsonModel' => $baseDir . '/models/jsonModel.php',
     'mapController' => $baseDir . '/controllers/mapController.php',
+    'mapModel' => $baseDir . '/models/mapModel.php',
     'testController' => $baseDir . '/controllers/testController.php',
     'ticketController' => $baseDir . '/controllers/ticketController.php',
     'ticketModel' => $baseDir . '/models/ticketModel.php',

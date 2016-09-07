@@ -4,7 +4,6 @@ class cabinetController extends Controller
 {
     protected $config;
 
-
     public function indexAction()
     {
         $this->view->render('cabinet');

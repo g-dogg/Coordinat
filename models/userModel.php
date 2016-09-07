@@ -7,14 +7,14 @@ class userModel extends Model
 	private $userId;
 	private $isAuthorized = false;
 	//private $db;
+/*
 
-
-	public function __construct(Db $db)
+	public function __construct()
 	{
-		parent::__construct( $db);
+		parent::__construct();
 		//$this->userName = $userName;
 	}
-
+*/
 	public static function isAuthorized()
 	{
 		if(!empty($_SESSION["userId"]))
@@ -27,7 +27,7 @@ class userModel extends Model
 	public function getUserFromDb($userName)
 	{
 		$query = "SELECT * FROM users WHERE username = :username LIMIT 1";
-		$handler = $this->db->prepare($query, PDO_FETCH_ASSOC);
+		$handler = $this->db->prepare($query);
 		$handler->execute([
 				"username" => $userName,
  			]);
@@ -38,6 +38,12 @@ class userModel extends Model
 		}
 		return $this;
 
+	}
+
+	public function getUser()
+	{
+		//исключительно ради тестов
+		var_dump($this->user);
 	}
 
 	public function passwordHash($password)
@@ -94,7 +100,7 @@ class userModel extends Model
 		}
 	}
 
-	public function newUser($userName, $password)
+	public function newUser($userName, $password, $email)
 	{
 
 		if($this->getUserFromDb($userName))
