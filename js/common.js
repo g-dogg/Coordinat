@@ -16,26 +16,6 @@ $(document).ready(function() {
 	/*
 	*   map
 	 */
-        mapboxgl.accessToken = 'pk.eyJ1IjoiZ2RvZ2ciLCJhIjoiY2lyYm90d3M5MDA0eWk5bWdpNGRtdWUxaiJ9.uAw0b_sIuY7F9slr4VN_dQ';
-        var map = new mapboxgl.Map({
-            container: 'map', // container id
-            style: 'mapbox://styles/mapbox/outdoors-v9', //stylesheet location
-            center: [73.22, 54.59], // starting position
-            zoom: 11 // starting zoom
-        });
-
-
-
-      function changePwd(userID) {
-		console.log("js - changePwd()");
-            $.ajax({
-		type: 'POST',
-		async: false,
-		url: '/cabinet/changePwd',
-		dataType: 'json'
-            });
-        };
-
 
             $(".logon").click(function(){
 			$(".logonForm").css("opacity", ".95");
@@ -117,7 +97,7 @@ $(window).load(function() {
 
         function getData(formObject) {
 		var hData = [];
-		$('input, textarea,select', formObject).each(function() {
+		$('input, textarea, select', formObject).each(function() {
 			if(this.name && this.name !== '') {
 				hData[this.name] = this.value;
 				console.log('hData[' + this.name + ']=' + hData[this.name]);
@@ -132,7 +112,7 @@ $(window).load(function() {
 		$.ajax({
 			type: 'POST',
 			cache: false,
-			async: false,
+			//async: false,
 			url: "/user/registerUser/",
 			data: postData,
 			dataType: 'json',

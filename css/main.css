@@ -301,18 +301,19 @@ figure.effect-sarah:hover a::after {
     display: block;
     text-align: center; }
 
-.contacts .left {
+.sendrequest .left {
   border-right: 1px solid #265D6B; }
 
-.contacts {
+.sendrequest {
+  margin-top: 30px;
   background: #CA6144;
   min-height: 800px;
   height: 680px; }
-  .contacts .cites {
+  .sendrequest .cites {
     display: block;
     width: 100%;
     position: relative; }
-    .contacts .cites blockquote {
+    .sendrequest .cites blockquote {
       opacity: 0;
       position: absolute;
       display: block;
@@ -320,14 +321,14 @@ figure.effect-sarah:hover a::after {
       -webkit-animation-delay: 1.5s;
       -moz-animation-delay: 1.5s;
       animation-delay: 1.5s; }
-      .contacts .cites blockquote:first-of-type {
+      .sendrequest .cites blockquote:first-of-type {
         opacity: 1; }
 
-.contacts h5 {
+.sendrequest h5 {
   text-align: center; }
-.contacts .input-field label {
+.sendrequest .input-field label {
   color: #393E51; }
-.contacts .input-field input[type=text]:focus, .contacts input[type=email]:focus, .contacts input[type=tel]:focus {
+.sendrequest .input-field input[type=text]:focus, .sendrequest input[type=email]:focus, .sendrequest input[type=tel]:focus {
   border-bottom: 1px solid #E9E6C9;
   box-shadow: 0 1px 0 0 #E9E6C9; }
 

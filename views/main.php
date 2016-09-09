@@ -82,14 +82,14 @@
           </div>
         </div>
       </section>
-      <section id="sendrequest" class="contacts">
+      <section id="sendrequest" class="sendrequest">
       <div class="titleWrapper">
           <h3>Регистрируйся</h3>
         </div>
         <div class="container">
           <div class="row">
             <h5>Остальную информацию нужно указать в личном кабинете</h5>
-            <form action="" class="col s12" id="registerUser" novalidate target="_blank" method="post">
+            <form action="" class="col s12" id="registerUser" novalidate method="post">
             <div class="input-field col s6">
               <input name="username" id="username" type="text" class="validate">
               <label for="username">Введите логин</label>

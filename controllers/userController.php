@@ -30,7 +30,11 @@ class userController extends Controller
     public function registerUserAction()
     {
     //TODO тут пое*** из модели
-      $validatedData = new validateFormPassword;
+      //$validatedData = new validateFormPassword;
+      if(isset($_POST))
+      {
+        var_dump($_POST);
+      }
     }
 
     public function testAction()

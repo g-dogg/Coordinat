@@ -15,7 +15,7 @@ class validateFormUserClass
 		'password' => [
 			'filter'=>FILTER_VALIDATE_REGEXP,
 			'options'=>[
-				'regexp'=>'',
+				'regexp'=>'^(?=.*[A-Z].*[A-Z])(?=.*[])',
 		]
 	];
 
