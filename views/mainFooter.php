@@ -36,7 +36,6 @@
             <script src="<?= Config::getRootPath();?>libs/scroll2id/PageScroll2id.min.js"></script>
             <script src="<?= Config::getRootPath();?>libs/waypoints/waypoints.min.js"></script>
             <script src="<?= Config::getRootPath();?>libs/animate/animate-css.js"></script>
-            <script src="<?= Config::getRootPath();?>libs/jqBootstrapValidation/jqBootstrapValidation.js"></script>
             <script src="<?= Config::getRootPath();?>js/common.js"></script>
       </div>
     </body>

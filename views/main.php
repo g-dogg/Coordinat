@@ -103,7 +103,7 @@
               <label for="password">Пароль. Минимум 8 символовю</label>
             </div>
             <div class="col s6 buttonLogon">
-                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="registerUser" value="true" onclick="registerUser();">Зарегистрироваться
+                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="registeruser" value="true" onclick="registerUser();">Зарегистрироваться
                     <i class="fa fa-share"></i>
           </div>
         </div>

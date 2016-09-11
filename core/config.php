@@ -18,4 +18,9 @@ class Config
     {
         return "//".$_SERVER['SERVER_NAME']."/";
     }
+    
+    public static function getTitle()
+    {
+        echo "Найти IT";
+    }
 }

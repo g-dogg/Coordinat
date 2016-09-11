@@ -27,14 +27,18 @@ class userController extends Controller
       echo $json->encodeUserJson();
     }
 
-    public function registerUserAction()
+    public function registerAction()
     {
     //TODO тут пое*** из модели
       //$validatedData = new validateFormPassword;
-      if(isset($_POST))
-      {
-        var_dump($_POST);
-      }
+        echo "Start!";
+        $var1 = json_encode($_REQUEST);
+        $f = fopen("log.txt", "w+");
+        fwrite($f, $var1);
+        
+        fclose($f);
+        echo "Stop!";
+      
     }
 
     public function testAction()
