@@ -1,41 +1,4 @@
-<section class="hidden logonForm">
-          <div class="container">
-            <div class="row">
-              <div class="col s4">&nbsp;</div>
-              <div class="col s4 form">
-                <form action="" method="POST"><!-- form-->
-                  <div class="titleWrapper">
-                    <h5>Вход</h5>
-                  </div>
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input name="username" id="username" type="text" class="validate" value="">
-                    <label for="username">Введите логин</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">vpn_key</i>
-                    <input name="password" id="password" type="password" class="validate" value="">
-                      <label for="password">Пароль.</label>
-                  </div>
-                  <div class="col s6">
-                  <p>
-                    <input type="checkbox" id="rememberMe" name="rememberMe" value="true">
-                    <label for="rememberMe">Запомнить</label>
-                   </p>
-                  </div>
-                  <div class="col s6 buttonLogon">
-                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="sendUserData" value="true" onclick="logonUser();">Отправить
-                    <i class="fa fa-share"></i>
-                  </button>
-                  </div>
-                </form><!--end form-->
-              </div>
-              <div class="col s4">&nbsp;</div>
-            </div>
-          </div>
-        </section>
-
-        </div><!--end of container-->
+      </div><!--end of container-->
       </header>
       <section class="about" id="about">
         <div class="titleWrapper">
@@ -89,9 +52,10 @@
         <div class="container">
           <div class="row">
             <h5>Остальную информацию нужно указать в личном кабинете</h5>
-            <form action="" class="col s12" id="registerUser" novalidate method="post">
+
+            <form action="" class="col s12" id="register" method="post" novalidate>
             <div class="input-field col s6">
-              <input name="username" id="username" type="text" class="validate">
+              <input name="username" id="username1" type="text" class="validate" required>
               <label for="username">Введите логин</label>
             </div>
             <div class="input-field col s6">
@@ -99,12 +63,16 @@
               <label for="email" data-error="wrong" data-success="right">Электронная почта</label>
             </div>
             <div class="input-field col s12">
-              <input name="password" id="password" type="password" class="validate">
+              <input name="password" id="password1" type="password" class="validate" required>
               <label for="password">Пароль. Минимум 8 символовю</label>
             </div>
             <div class="col s6 buttonLogon">
                       <button class="btn waves-effect waves-light btn_clr2" type="submit" name="registeruser" value="true" onclick="registerUser();">Зарегистрироваться
                     <i class="fa fa-share"></i>
+               </button>
+               </div>
+               </form>
+
           </div>
         </div>
       </section>

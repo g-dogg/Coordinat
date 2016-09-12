@@ -27,37 +27,6 @@ $(document).ready(function () {
     });
 
 
-    function getData(formObject) {
-        var hData = [];
-        $('input, textarea, select', formObject).each(function () {
-            if (this.name && this.name !== '') {
-                hData[this.name] = this.value;
-                console.log('hData[' + this.name + ']=' + hData[this.name]);
-            }
-        });
-        return hData;
-    }
-
-    function registerUser() {
-        var postData = getData('#registerUser');
-
-        $.ajax({
-            type: 'POST',
-            async: false,
-            url: "/user/register",
-            data: postData,
-            dataType: 'json',
-            success: function (data) {
-                if (data['success']) {
-                    alert('Успех');
-                }
-                else {
-                    alert('Не Успех');
-                }
-            }
-        });
-    }
-
 
     $('#changePwd').bind('click', function () {
         document.location.replace('changePassword');
@@ -124,3 +93,38 @@ $(window).load(function () {
     $(".mainHead .titleWrapper .sendRequest").animated("fadeIn", "pulse");
 
 });
+
+
+    function getData(formObject) {
+        var hData = [];
+        $('input, textarea, select', formObject).each(function () {
+            if (this.name && this.name !== '') {
+                hData[this.name] = this.value;
+                console.log('hData[' + this.name + ']=' + hData[this.name]);
+            }
+        });
+        return hData;
+    }
+
+    function registerUser() {
+        var postData = getData('#register');
+   /* var login = $('#username').val();
+    var pwd = $('#password').val();
+    var postData = "username="+login+"&password="+pwd;
+*/
+        $.ajax({
+            type: 'POST',
+            async: false,
+            url: "/user/register/",
+            data: postData,
+            dataType: 'json',
+            success: function (data) {
+                if (data['success']) {
+                    alert('Успех');
+                }
+                else {
+                    alert('Не Успех');
+                }
+            }
+        });
+    }

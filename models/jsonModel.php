@@ -1,11 +1,4 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * Description of jsonModel
  *
@@ -30,13 +23,13 @@ class jsonModel  extends Model
 	}
 	/**
 	 * [parseJsonForCoord description]
-	 * @return object возвращает экземпляр класса jsonModel
+	 * @return object возвращает
 	 */
 	public function parseJsonForCoord()
 	{
 		$jsonDecoded = json_decode($this->json);
-      	$this->coords = $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
-      	return $this->coords;
+      		$this->coords = $jsonDecoded->response->GeoObjectCollection->featureMember[0]->GeoObject->Point->pos;
+      		return $this->coords;
 	}
 	/**
 	 * долгота - широта
@@ -45,7 +38,7 @@ class jsonModel  extends Model
 	 */
 	public function cuttingCoord()
     	{
-      	$this->cuttedCoordinat = explode(" ", $this->parseJsonForCoord());
+      		$this->cuttedCoordinat = explode(" ", $this->parseJsonForCoord());
     	}
 
     	public function getCuttedCoords()
@@ -53,6 +46,7 @@ class jsonModel  extends Model
     		return $this->cuttedCoordinat;
     	}
 
+    	//wtf??
     	public function parseUserJson()
     	{
     		$jsonDecoded = json_decode($this->json);
