@@ -17,7 +17,11 @@ $(document).ready(function () {
     /*
      *   map
      */
-
+     /**
+      * [description]
+      * @param  {[type]} ){                  	var login [description]
+      * @return {[type]}     [description]
+      */
      $('#registerButton').on('click', function(){
      	var login = $('#regusername').val();
     	var email = $('#regemail').val();
@@ -51,6 +55,9 @@ $(document).ready(function () {
         //$("logonForm").animated("FadeInDown", "fadeOutUp");
     });
 
+    $('#loginUser').on('click', function(){
+
+    });
 
 
     $('#changePwd').bind('click', function () {
