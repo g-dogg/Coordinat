@@ -18,6 +18,31 @@ $(document).ready(function () {
      *   map
      */
 
+     $('#registerButton').on('click', function(){
+     	var login = $('#regusername').val();
+    	var email = $('#regemail').val();
+    	var pwd = $('#regpassword').val();
+    	var postData = "username="+login+"&email="+email+"&password="+pwd;
+    	console.log(postData);
+
+        $.ajax({
+            type: 'POST',
+            cache: false,
+            async: false,
+            url: "/user/register/",
+            data: postData,
+            dataType: 'json',
+            success: function (data) {
+                if (data['success']) {
+                    console.log('Успех');
+                }
+                else {
+                    console.log('Не Успех');
+                }
+            }
+        });
+     });
+
     $(".logon").click(function () {
         $(".logonForm").css("opacity", ".95");
         $(".logonForm").fadeIn(800);
@@ -94,7 +119,7 @@ $(window).load(function () {
 
 });
 
-
+/*
     function getData(formObject) {
         var hData = [];
         $('input, textarea, select', formObject).each(function () {
@@ -107,24 +132,27 @@ $(window).load(function () {
     }
 
     function registerUser() {
-        var postData = getData('#register');
-   /* var login = $('#username').val();
-    var pwd = $('#password').val();
-    var postData = "username="+login+"&password="+pwd;
-*/
+	var login = $('#regusername').val();
+    	var email = $('#regemail').val();
+    	var pwd = $('#regpassword').val();
+    	var postData = "username="+login+"&email="+email+"&password="+pwd;
+    	console.log(postData);
+
         $.ajax({
             type: 'POST',
+            cache: false,
             async: false,
             url: "/user/register/",
             data: postData,
             dataType: 'json',
             success: function (data) {
                 if (data['success']) {
-                    alert('Успех');
+                    console.log('Успех');
                 }
                 else {
-                    alert('Не Успех');
+                    console.log('Не Успех');
                 }
             }
         });
     }
+    */

@@ -54,24 +54,24 @@
             <h5>Остальную информацию нужно указать в личном кабинете</h5>
 
             <form action="" class="col s12" id="register" method="post" novalidate>
-            <div class="input-field col s6">
-              <input name="username" id="username1" type="text" class="validate" required>
-              <label for="username">Введите логин</label>
-            </div>
-            <div class="input-field col s6">
-              <input name="email" id="email" type="email"  class="validate" data-validation-matches-match="email" data-validation-matches-message="Вы не ввели адрес электронной почты" required>
-              <label for="email" data-error="wrong" data-success="right">Электронная почта</label>
-            </div>
-            <div class="input-field col s12">
-              <input name="password" id="password1" type="password" class="validate" required>
-              <label for="password">Пароль. Минимум 8 символовю</label>
-            </div>
-            <div class="col s6 buttonLogon">
-                      <button class="btn waves-effect waves-light btn_clr2" type="submit" name="registeruser" value="true" onclick="registerUser();">Зарегистрироваться
-                    <i class="fa fa-share"></i>
-               </button>
-               </div>
-               </form>
+              <div class="input-field col s6">
+                <input name="username" id="regusername" type="text" class="validate" required>
+                <label for="username">Введите логин</label>
+              </div>
+              <div class="input-field col s6">
+                <input name="email" id="regemail" type="email"  class="validate" data-validation-matches-match="email" data-validation-matches-message="Вы не ввели адрес электронной почты" required>
+                <label for="email" data-error="wrong" data-success="right">Электронная почта</label>
+              </div>
+              <div class="input-field col s12">
+                <input name="password" id="regpassword" type="password" class="validate" required>
+                <label for="password">Пароль. Минимум 8 символов</label>
+              </div>
+              <div class="col s6 buttonLogon">
+                <button class="btn waves-effect waves-light btn_clr2" id="registerButton" type="submit" name="registeruser" value="true">Зарегистрироваться
+                  <i class="fa fa-share"></i>
+                </button>
+              </div>
+            </form>
 
           </div>
         </div>

@@ -57,9 +57,9 @@ class Router
 		{
 			Router::ErrorPage404();
 		}
-        
+
 		$view = new View;
-        $model = new $modelName($db);
+        		$model = new $modelName($db);
 		$controller = new $controllerName($view, $model);
 		$action = $actionName;
 		if(method_exists($controller, $action))
@@ -68,7 +68,7 @@ class Router
 		}
 		else
 		{
-            Router::ErrorPage404();
+            		Router::ErrorPage404();
 		}
 		/**/
 	}
@@ -78,8 +78,8 @@ class Router
 	 */
 	static function ErrorPage404()
 	{
-      	$host = 'http://'.$_SERVER['HTTP_HOST'].'/';
-      	/*header('HTTP/1.1 404 Not Found');
+      		$host = 'http://'.$_SERVER['HTTP_HOST'].'/';
+      		/*header('HTTP/1.1 404 Not Found');
 		header("Status: 404 Not Found");
 		header('Location:'.$host.'404');*/
 	}

@@ -31,14 +31,15 @@ class userController extends Controller
     {
     //TODO тут пое*** из модели
       //$validatedData = new validateFormPassword;
-        echo "Start!";
+
         $var1 = json_encode($_REQUEST);
         $f = fopen("log.txt", "w+");
         fwrite($f, $var1);
-        
+
         fclose($f);
-        echo "Stop!";
-      
+        $data['success'] = true;
+        echo json_encode($data);
+
     }
 
     public function testAction()
