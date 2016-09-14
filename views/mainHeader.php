@@ -24,21 +24,20 @@
           <span class="sr-only">Loading...</span>
         </div>
       </div>
-      <header class="mainHead" id="home" ><!--data-parallax="scroll" data-image-src="<?= Config::getRootPath();?>img/bg.jpg">-->
+      <header class="valign-wrapper mainHead" id="home" ><!--data-parallax="scroll" data-image-src="<?= Config::getRootPath();?>img/bg.jpg">-->
       <div class="parallax-container">
         <div class="parallax"><img src="<?= Config::getRootPath();?>img/bg.jpg"></div>
       </div>
-      <div class="titleWrapper">
+      <div class="valign titleWrapper">
         <div class="logo">
-          <p>НАйти IT</p>
+          <h1 class="red-text text-lighten-5">Найти IT</h1>
         </div>
         <div class="mainDescr">
           <p>Рядом всегда найдется тот, кто поможет!..</p>
         </div>
         <div class="sendRequest">
           <a href="#sendrequest" class="waves-effect waves-orange btn-large inner-shiny btn_clr"><i clamdi-action-exit-to-app right"></i>Регистрируйся</a>
-          <div><p>Уже зарегистрированы?</p></div>
-          <div class="logon" >Вход</div>
+          <div><p>Уже зарегистрированы?</p><a href="" class="red-text text-lighten-5 logon" >Вход</a></div>
         </div>
       </div>
 

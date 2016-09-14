@@ -43,7 +43,7 @@ button, button:focus, .sandwich, .sandwich.active {
   width: 60px;
   height: 60px;
   position: fixed;
-  z-index: 100;
+  z-index: 500;
   border: none;
   left: 60px;
   top: 20px; }
@@ -194,6 +194,7 @@ figure.effect-sarah:hover a::after {
   transform: translate3d(0, 0, 0); }
 
 .logonForm {
+  top: 10px;
   position: absolute;
   width: 100%;
   display: none;
@@ -217,18 +218,23 @@ figure.effect-sarah:hover a::after {
 
 .mainHead {
   position: relative;
-  min-height: 480px; }
+  min-height: 480px;
+  width: 100%; }
   .mainHead .titleWrapper {
+    display: block;
     position: absolute;
     margin-top: 10px;
-    padding: 50px;
     vertical-align: middle;
     z-index: 199;
+    width: 100%;
     transition: all 1s ease 0.3s ease-out;
     -webkit-transition: all 1s ease 0.3s ease-out;
     -moz-transition: all 1s ease 0.3s ease-out;
     -ms-transition: all 1s ease 0.3s ease-out;
     -o-transition: all 1s ease 0.3s ease-out; }
+    .mainHead .titleWrapper .logon:hover {
+      color: red;
+      background-color: red; }
     .mainHead .titleWrapper .logo {
       position: relative;
       display: block;
