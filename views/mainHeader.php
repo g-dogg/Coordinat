@@ -20,7 +20,7 @@
     <body>
       <div class="loader">
         <div class="loader-inner">
-          <i class="fa fa-cog fa-spin fa-3x fa-fw margin-bottom"></i>
+          <i class="fa fa-cog fa-spin fa-5x fa-fw margin-bottom"></i>
           <span class="sr-only">Loading...</span>
         </div>
       </div>
@@ -37,7 +37,7 @@
         </div>
         <div class="sendRequest">
           <a href="#sendrequest" class="waves-effect waves-orange btn-large inner-shiny btn_clr"><i clamdi-action-exit-to-app right"></i>Регистрируйся</a>
-          <div><p>Уже зарегистрированы?</p><a href="" class="red-text text-lighten-5 logon" >Вход</a></div>
+          <div class="enter">Уже зарегистрированы?&nbsp;<span class="red-text text-lighten-5 logon" >Вход</span></div>
         </div>
       </div>
 

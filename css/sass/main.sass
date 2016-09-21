@@ -61,6 +61,8 @@ html
     left: 50%
     top: 50%
     position: absolute
+    i
+      color: $htmlColor
 
 button, button:focus, .sandwich, .sandwich.active
   background: none
@@ -218,10 +220,19 @@ figure.effect-sarah:hover a::after
   display: none
   z-index: 9999
   +animation-delay(2.5s)
-  .form
+  i
+    display: inline-block
+    position: relative
+    color: $menu
+    margin: 5px
+    &:hover
+      color: $mainSlog
+  form
+    display: block
     height: 360px
     border-radius: 10px
-    background: $menu
+    background: $fontColor
+    width: 100%
 
 .titleWrapper
   display: block
@@ -244,10 +255,14 @@ figure.effect-sarah:hover a::after
     z-index: 199
     width: 100%
     +transition(all 1s ease)
-    .logon
-      &:hover
-        color: red
-        background-color: red
+    .enter
+      color: $mainSlog
+      .logon
+        &:hover
+          cursor: pointer
+          border-bottom: 1px solid $sandwich
+          //background-color: $sandwich //temporary
+
     .logo
       position: relative
       display: block
@@ -320,7 +335,7 @@ $imgH: 150px
 
 .sendrequest
   margin-top: 30px
-  background: $watchBG
+  background: $mainTextp
   min-height: 800px
   height: 680px
   .cites
