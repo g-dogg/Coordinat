@@ -30,9 +30,10 @@ class userController extends Controller
     public function registerAction()
     {
     //TODO тут пое*** из модели
-      //$validatedData = new validateFormPassword;
+      $validator = new validateFormRegisterClass;
+      $validatedData = $validator->validateUserForm();
 
-        $var1 = json_encode($_REQUEST);
+        $var1 = json_encode($validatedData);
         $f = fopen("log.txt", "w+");
         fwrite($f, $var1);
 

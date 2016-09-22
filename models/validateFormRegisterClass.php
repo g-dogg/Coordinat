@@ -1,6 +1,6 @@
 <?php
 
-class validateFormUserClass
+class validateFormRegisterClass
 {
 
 	private $validatedUserData =  [];
@@ -15,7 +15,7 @@ class validateFormUserClass
 		'password' => [
 			'filter'=>FILTER_VALIDATE_REGEXP,
 			'options'=>[
-				'regexp'=>'^(?=.*[A-Z].*[A-Z])(?=.*[])',
+				'regexp'=>'.*',
 		]
 	];
 

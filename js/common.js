@@ -54,6 +54,10 @@ $(document).ready(function () {
         //$(".logonForm").removeClass("hidden");
         //$("logonForm").animated("FadeInDown", "fadeOutUp");
     });
+    $(".close").on('click', function(){
+        $(".logonForm").css("opacity", "0");
+        $(".logonForm").fadeOut(800);
+    });
 
     $('#loginUser').on('click', function(){
 
@@ -95,15 +99,6 @@ $(document).ready(function () {
         ;
     });
 
-    function showLogon() {
-        $(".logon").click(function () {
-            $(".logonForm").css("opacity", ".95");
-            $(".logonForm").fadeIn(800);
-
-            //$(".logonForm").removeClass("hidden");
-            //$("logonForm").animated("FadeInDown", "fadeOutUp");
-        });
-    }
 
     $(".titleWrapper .logo").animated("fadeInDown", "bounceOut");
     $(".titleWrapper h3").animated("fadeInDown", "fadeOutUp");

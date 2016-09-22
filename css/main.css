@@ -45,7 +45,7 @@ button, button:focus, .sandwich, .sandwich.active {
   width: 60px;
   height: 60px;
   position: fixed;
-  z-index: 500;
+  z-index: 600;
   border: none;
   left: 60px;
   top: 20px; }
@@ -112,7 +112,7 @@ button, button:focus, .sandwich, .sandwich.active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.95);
-  z-index: 50;
+  z-index: 500;
   right: 0;
   top: 0;
   display: none; }
@@ -205,16 +205,13 @@ figure.effect-sarah:hover a::after {
   -moz-animation-delay: 2.5s;
   animation-delay: 2.5s; }
   .logonForm i {
-    display: inline-block;
-    position: relative;
-    color: #7eb7aa;
-    margin: 5px; }
+    color: #7eb7aa; }
     .logonForm i:hover {
       color: #feda7c; }
   .logonForm form {
     display: block;
     height: 360px;
-    border-radius: 10px;
+    border-radius: 15px;
     background: #182c32;
     width: 100%; }
 

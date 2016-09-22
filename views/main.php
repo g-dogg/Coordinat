@@ -5,7 +5,7 @@
               <div class="col s8 form">
 
                 <form action="" method="POST"><!-- form-->
-                  <i class="right fa fa-times fa-2x" aria-hidden="true"></i>
+                  <i class="right fa fa-times fa-2x close" aria-hidden="true"></i>
                   <div class="titleWrapper">
                     <h5>Вход</h5>
                   </div>
