@@ -39,6 +39,7 @@ $(document).ready(function () {
             success: function (data) {
                 if (data['success']) {
                     console.log('Успех');
+                    $(location).attr('href', '/map')
                 }
                 else {
                     console.log('Не Успех');

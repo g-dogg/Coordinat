@@ -24,11 +24,11 @@ return array(
     'testController' => $baseDir . '/controllers/testController.php',
     'ticketController' => $baseDir . '/controllers/ticketController.php',
     'ticketModel' => $baseDir . '/models/ticketModel.php',
-    'userClass' => $baseDir . '/core/user.php',
     'userController' => $baseDir . '/controllers/userController.php',
     'userModel' => $baseDir . '/models/userModel.php',
     'validateFormAddressModel' => $baseDir . '/models/validateFormAddressClass.php',
     'validateFormLogonModel' => $baseDir . '/models/validateFormLogonClass.php',
     'validateFormPasswordClass' => $baseDir . '/models/validateFormPasswordClass.php',
     'validateFormProblemModel' => $baseDir . '/models/validateFormProblemClass.php',
+    'validateFormRegisterClass' => $baseDir . '/models/validateFormRegisterClass.php',
 );

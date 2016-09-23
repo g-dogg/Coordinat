@@ -31,7 +31,7 @@ class userController extends Controller
     {
     //TODO тут пое*** из модели
       $validator = new validateFormRegisterClass;
-      $validatedData = $validator->validateUserForm();
+      $validatedData = $validator->validateUserForm()->getValidatedUserData();
 
         $var1 = json_encode($validatedData);
         $f = fopen("log.txt", "w+");
