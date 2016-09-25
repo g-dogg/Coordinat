@@ -23,8 +23,22 @@ class userModel extends Model
 		}
 		return FALSE;
 	}
+    
+    /**
+     * 
+     * @param string $userName
+     * @return boolean. True if user exists, and false if not.
+     */
+    public function isUserExist($userName)
+    {
+        if(!empty($this->getUserFromDb($userName)->getUser()))
+        {
+            return TRUE;
+        }
+        return FALSE;
+    }
 
-	public function getUserFromDb($userName)
+	private function getUserFromDb($userName)
 	{
 		$query = "SELECT * FROM users WHERE username = :username LIMIT 1";
 		$handler = $this->db->prepare($query);
@@ -32,18 +46,13 @@ class userModel extends Model
 				"username" => $userName,
  			]);
 		$this->user = $handler->fetchAll();
-		if(!$this->user)
-		{
-			return FALSE;
-		}
+		
 		return $this;
-
 	}
 
 	public function getUser()
 	{
-		//исключительно ради тестов
-		var_dump($this->user);
+		return $this->user;
 	}
 
 	public function passwordHash($password)
@@ -103,7 +112,7 @@ class userModel extends Model
 	public function newUser($userName, $password, $email)
 	{
 
-		if($this->getUserFromDb($userName))
+		if($this->isUserExist($userName))
 		{
 			throw new \Exception("User exist: " . $userName, 1);
 

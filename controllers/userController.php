@@ -30,9 +30,37 @@ class userController extends Controller
     public function registerAction()
     {
     //TODO тут пое*** из модели
-      $validator = new validateFormRegisterClass;
-      $validatedData = $validator->validateUserForm()->getValidatedUserData();
-
+        $validator = new validateFormRegisterClass;
+        $validatedData = $validator->validateUserForm()->getValidatedUserData();
+        
+        $user = new userModel;
+        
+        try
+        {
+            $user->newUser($validatedData['username']);
+            $data = [
+                    'success'  => 1,
+                    'message'  => 'Добро пожаловать',
+                    'username' => $validatedData['username'],
+                    'email'    => $validatedData['email']
+                ];
+    
+            
+            
+        }
+        catch (Exception $ex) 
+        {
+            echo $ex; //TODO: наеписать класс логгирования и сюда ег овпендюривать
+            $data = [
+                    'success'  => 0,
+                    'message'  => 'Добро пожаловать',
+                    'username' => $validatedData['username'],
+                    'email'    => $validatedData['email']
+                ];
+        }
+        $json = new jsonModel(NULL, $data);
+        echo $json->encodeUserJson();
+      
         $var1 = json_encode($validatedData);
         $f = fopen("log.txt", "w+");
         fwrite($f, $var1);
