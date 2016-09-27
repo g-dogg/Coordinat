@@ -32,23 +32,23 @@ class userController extends Controller
     //TODO тут пое*** из модели
         $validator = new validateFormRegisterClass;
         $validatedData = $validator->validateUserForm()->getValidatedUserData();
-        
+
         $user = new userModel;
-        
+
         try
         {
-            $user->newUser($validatedData['username']);
+            $user->newUser($validatedData['username'], $validatedData['password'], $validatedData['email']);
             $data = [
                     'success'  => 1,
                     'message'  => 'Добро пожаловать',
                     'username' => $validatedData['username'],
                     'email'    => $validatedData['email']
                 ];
-    
-            
-            
+
+
+
         }
-        catch (Exception $ex) 
+        catch (Exception $ex)
         {
             echo $ex; //TODO: наеписать класс логгирования и сюда ег овпендюривать
             $data = [
@@ -60,7 +60,7 @@ class userController extends Controller
         }
         $json = new jsonModel(NULL, $data);
         echo $json->encodeUserJson();
-      
+
         $var1 = json_encode($validatedData);
         $f = fopen("log.txt", "w+");
         fwrite($f, $var1);
