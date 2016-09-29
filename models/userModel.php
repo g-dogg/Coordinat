@@ -23,9 +23,9 @@ class userModel extends Model
 		}
 		return FALSE;
 	}
-    
+
     /**
-     * 
+     *
      * @param string $userName
      * @return boolean. True if user exists, and false if not.
      */
@@ -46,7 +46,7 @@ class userModel extends Model
 				"username" => $userName,
  			]);
 		$this->user = $handler->fetchAll();
-		
+
 		return $this;
 	}
 
@@ -112,17 +112,26 @@ class userModel extends Model
 	public function newUser($userName, $password, $email)
 	{
 
-		if($this->isUserExist($userName))
+		if(FALSE === $this->isUserExist($userName))
 		{
-			throw new \Exception("User exist: " . $userName, 1);
+			//throw new \Exception("User exist: " . $userName, 1);
 
-			$query = "INSERT INTO users SET (username, hash) values (:username, :hash)";
+			$query = "INSERT INTO coordinat.`users` (`username`, `email`, `password`) values (:username, :email, :hash)";
+			/*$handler = $this->db->prepare($query);
+			$handler->execute([
+					"username" => $userName,
+					"email" => $email,
+					"hash" => password_hash($password, PASSWORD_DEFAULT)
+				]);
+				*/
+
 			$handler = $this->db->prepare($query);
 			try
 			{
 				$this->db->beginTransaction();
 				$result = $handler->execute([
 					"username" => $userName,
+					"email" => $email,
 					"hash" => password_hash($password, PASSWORD_DEFAULT)
 				]);
 				$this->db->commit();
