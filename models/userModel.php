@@ -24,26 +24,27 @@ class userModel extends Model
 		return FALSE;
 	}
 
-    /**
-     *
-     * @param string $userName
-     * @return boolean. True if user exists, and false if not.
-     */
-    public function isUserExist($userName)
-    {
-        if(!empty($this->getUserFromDb($userName)->getUser()))
-        {
-            return TRUE;
-        }
-        return FALSE;
-    }
-
-	private function getUserFromDb($userName)
+	/**
+	 *
+	 * @param string $userName
+	 * @return boolean. True if user exists, and false if not.
+	 */
+	public function isUserExist($userName, $email)
 	{
-		$query = "SELECT * FROM users WHERE username = :username LIMIT 1";
+	    if(!empty($this->getUserFromDb($userName, $email)->getUser()))
+	    {
+	        return TRUE;
+	    }
+	    return FALSE;
+	}
+
+	private function getUserFromDb($userName, $email)
+	{
+		$query = "SELECT * FROM users WHERE username = :username OR email = :email LIMIT 1";
 		$handler = $this->db->prepare($query);
 		$handler->execute([
 				"username" => $userName,
+				"email"        => $email
  			]);
 		$this->user = $handler->fetchAll();
 
@@ -111,6 +112,11 @@ class userModel extends Model
 
 	public function newUser($userName, $password, $email)
 	{
+
+		if(FALSE === $userName or FALSE === $email)
+		{
+			throw new Exception("Error Processing Request", 1);
+		}
 
 		if(FALSE === $this->isUserExist($userName))
 		{
