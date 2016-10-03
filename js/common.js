@@ -39,7 +39,7 @@ $(document).ready(function () {
             success: function (data) {
                 if (data['success']) {
                     console.log('Успех');
-                    $(location).attr('href', '/map')
+                    alert(data['message']);
                 }
                 else {
                     console.log('Не Успех');

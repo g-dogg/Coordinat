@@ -39,14 +39,13 @@ class userController extends Controller
         {
             $user->newUser($validatedData['username'], $validatedData['password'], $validatedData['email']);
             $data = [
+                    'uid' => $user->getUserId(),
                     'success'  => 1,
                     'message'  => 'Добро пожаловать',
                     'username' => $validatedData['username'],
                     'email'    => $validatedData['email']
                 ];
-
-
-
+            $user->saveSession();
         }
         catch (Exception $ex)
         {
@@ -61,7 +60,7 @@ class userController extends Controller
         $json = new jsonModel(NULL, $data);
         echo $json->encodeUserJson();
 
-        $var1 = json_encode($validatedData);
+        $var1 = json_encode($data);
         $f = fopen("log.txt", "w+");
         fwrite($f, $var1);
 

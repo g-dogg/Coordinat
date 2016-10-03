@@ -38,7 +38,7 @@ class userModel extends Model
 	    return FALSE;
 	}
 
-	private function getUserFromDb($userName, $email)
+	private function getUserFromDb($userName = NULL, $email = NULL)
 	{
 		$query = "SELECT * FROM users WHERE username = :username OR email = :email LIMIT 1";
 		$handler = $this->db->prepare($query);
@@ -54,6 +54,11 @@ class userModel extends Model
 	public function getUser()
 	{
 		return $this->user;
+	}
+
+	public function getUserId()
+	{
+		return $this->userId;
 	}
 
 	public function passwordHash($password)
@@ -72,8 +77,8 @@ class userModel extends Model
 	public function authorize($userName, $password, $rememberMe)
 	{
 
-		$this->getUserFromDb($userName);
-		if(FALSE === password_verify($password, $this->user['hash']))
+		$this->getUserFromDb($userName, $email);
+		if(FALSE === password_verify($password, $this->user['password']))
 		{
 			$this->isAuthorized = FALSE;
 		}
@@ -118,18 +123,11 @@ class userModel extends Model
 			throw new Exception("Error Processing Request", 1);
 		}
 
-		if(FALSE === $this->isUserExist($userName))
+		if(FALSE === $this->isUserExist($userName, $email))
 		{
 			//throw new \Exception("User exist: " . $userName, 1);
 
 			$query = "INSERT INTO coordinat.`users` (`username`, `email`, `password`) values (:username, :email, :hash)";
-			/*$handler = $this->db->prepare($query);
-			$handler->execute([
-					"username" => $userName,
-					"email" => $email,
-					"hash" => password_hash($password, PASSWORD_DEFAULT)
-				]);
-				*/
 
 			$handler = $this->db->prepare($query);
 			try
@@ -140,6 +138,7 @@ class userModel extends Model
 					"email" => $email,
 					"hash" => password_hash($password, PASSWORD_DEFAULT)
 				]);
+				$this->userId = $this->db->lastInsertId();
 				$this->db->commit();
 			}
 			catch (\PDOException $e)
