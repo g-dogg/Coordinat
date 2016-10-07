@@ -90,7 +90,7 @@
         <div class="container">
           <div class="row">
             <h5>Остальную информацию нужно указать в личном кабинете</h5>
-            <div><?php echo $_SESSION['userId']?></div>
+
             <form action="" class="col s12" id="register" method="post" novalidate>
               <div class="input-field col s6">
                 <input name="username" id="regusername" type="text" class="validate" required>

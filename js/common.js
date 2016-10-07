@@ -7,6 +7,7 @@ $(document).ready(function () {
         $(".about").css("height", $(window).height() * $percentage);
         $(".contacts").css("height", $(window).height() * $percentage);
         $(".mainMap").css("height", $(window).height() * $percentage);
+        $(".login").css("height", $(window).height() * $percentage);
     }
     ;
     heightDetect(1);
