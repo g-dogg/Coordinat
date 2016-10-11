@@ -49,7 +49,7 @@ class userController extends Controller
         }
         catch (Exception $ex)
         {
-            echo $ex; //TODO: наеписать класс логгирования и сюда ег овпендюривать
+            echo $ex; //TODO: написать класс логгирования и сюда ег овпендюривать
             $data = [
                     'success'  => 0,
                     'message'  => 'Добро пожаловать',

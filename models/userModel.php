@@ -73,7 +73,24 @@ class userModel extends Model
 		}
 		return $passwordHashed;
 	}
-
+    /**
+     * Переписать как сеттер и геттер... 
+     * 
+     * @param type $password
+     * @return string
+     */
+    public function setSalt($password)
+    {   
+        $salted = '';
+        for ($i = 0; $i <= rand(5, 8); $i++)
+        {
+            $salted .= md5($password);
+        }
+        
+        $salted = md5($salted);
+        return $salted;        
+    }
+    
 	public function authorize($userName, $password, $rememberMe)
 	{
 
@@ -127,7 +144,7 @@ class userModel extends Model
 		{
 			//throw new \Exception("User exist: " . $userName, 1);
 
-			$query = "INSERT INTO coordinat.`users` (`username`, `email`, `password`) values (:username, :email, :hash)";
+			$query = "INSERT INTO coordinat.`users` (`username`, `email`, `password`, `salt`) values (:username, :email, :hash, :salt)";
 
 			$handler = $this->db->prepare($query);
 			try
@@ -136,7 +153,8 @@ class userModel extends Model
 				$result = $handler->execute([
 					"username" => $userName,
 					"email" => $email,
-					"hash" => password_hash($password, PASSWORD_DEFAULT)
+					"hash" => password_hash($password, PASSWORD_DEFAULT),
+                    "salt" => $this->setSalt($password)
 				]);
 				$this->userId = $this->db->lastInsertId();
 				$this->db->commit();
